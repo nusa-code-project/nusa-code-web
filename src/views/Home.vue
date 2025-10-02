@@ -282,7 +282,7 @@ import {
         <div class="flex flex-row items-center gap-5">
             <Card class="w-50 p-0 border-none shadow-none">
                 <CardHeader class="ps-2 pe-2 justify-center">
-                    <img src="/Ellipse 21.png" class="h-15 w-15" alt="">
+                    <img src="/Ellipse 21.png" class="h-20 w-20" alt="">
                 </CardHeader>
                 <CardFooter class="ps-2 pe-2 flex flex-col gap-1 justify-center items-center text-center">
                     <h1 class="text-[15px] font-bold text-center">Sonny Philo</h1>
@@ -291,7 +291,7 @@ import {
             </Card>
             <Card class="w-50 p-0 border-none shadow-none">
                 <CardHeader class="ps-2 pe-2 justify-center">
-                    <img src="/Ellipse 21.png" class="h-15 w-15" alt="">
+                    <img src="/Ellipse 21.png" class="h-20 w-20" alt="">
                 </CardHeader>
                 <CardFooter class="ps-2 pe-2 flex flex-col gap-1 justify-center items-center text-center">
                     <h1 class="text-[15px] font-bold text-center">Sonny Philo</h1>
@@ -300,7 +300,7 @@ import {
             </Card>
             <Card class="w-50 p-0 border-none shadow-none">
                 <CardHeader class="ps-2 pe-2 justify-center">
-                    <img src="/Ellipse 21.png" class="h-15 w-15" alt="">
+                    <img src="/Ellipse 21.png" class="h-20 w-20" alt="">
                 </CardHeader>
                 <CardFooter class="ps-2 pe-2 flex flex-col gap-1 justify-center items-center text-center">
                     <h1 class="text-[15px] font-bold text-center">Sonny Philo</h1>
@@ -309,7 +309,7 @@ import {
             </Card>
             <Card class="w-50 p-0 border-none shadow-none">
                 <CardHeader class="ps-2 pe-2 justify-center">
-                    <img src="/Ellipse 21.png" class="h-15 w-15" alt="">
+                    <img src="/Ellipse 21.png" class="h-20 w-20" alt="">
                 </CardHeader>
                 <CardFooter class="ps-2 pe-2 flex flex-col gap-1 justify-center items-center text-center">
                     <h1 class="text-[15px] font-bold text-center">Sonny Philo</h1>
@@ -318,7 +318,7 @@ import {
             </Card>
             <Card class="w-50 p-0 border-none shadow-none">
                 <CardHeader class="ps-2 pe-2 justify-center">
-                    <img src="/Ellipse 21.png" class="h-15 w-15" alt="">
+                    <img src="/Ellipse 21.png" class="h-20 w-20" alt="">
                 </CardHeader>
                 <CardFooter class="ps-2 pe-2 flex flex-col gap-1 justify-center items-center text-center">
                     <h1 class="text-[15px] font-bold text-center">Sonny Philo</h1>
@@ -327,7 +327,7 @@ import {
             </Card>
             <Card class="w-50 p-0 border-none shadow-none">
                 <CardHeader class="ps-2 pe-2 justify-center">
-                    <img src="/Ellipse 21.png" class="h-15 w-15" alt="">
+                    <img src="/Ellipse 21.png" class="h-20 w-20" alt="">
                 </CardHeader>
                 <CardFooter class="ps-2 pe-2 flex flex-col gap-1 justify-center items-center text-center">
                     <h1 class="text-[15px] font-bold text-center">Sonny Philo</h1>
