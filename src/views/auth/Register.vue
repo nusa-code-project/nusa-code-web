@@ -19,7 +19,7 @@ import { Button } from '@/components/ui/button'
 
         <div class="flex justify-around w-full relative z-10">
             <div class="flex flex-col items-center text-2xl mt-10">
-                <img src="/Frame 1618869415.png" class="mb-10" width="500" height="600" alt="" />
+                <img src="/Frame 1618869416.png" class="mb-10" width="500" height="600" alt="" />
             </div>
 
             <Card class="w-150 flex justify-center z-10">
