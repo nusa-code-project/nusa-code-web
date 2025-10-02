@@ -9,6 +9,7 @@ import {
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
+import { Checkbox } from "@/components/ui/checkbox"
 </script>
 
 <template>
@@ -34,32 +35,26 @@ import { Button } from '@/components/ui/button'
                 </CardHeader>
                 <CardContent>
                     <form class="w-full gap-5 justify-center">
-                        <div class="flex flex-row gap-10 mb-5">
-                            <div class="flex flex-col w-1/2">
-                                <Label for="name" class="mb-2">Name</Label>
-                                <Input type="text" id="name" class="h-12" placeholder="e.g Prabowo" />
-                            </div>
-                            <div class="flex flex-col w-1/2">
-                                <Label for="email" class="mb-2">Email</Label>
-                                <Input type="email" id="email" class="h-12" placeholder="e.g prabowo@gmail.com" />
-                            </div>
+                        <div class="flex flex-col w-full mb-2">
+                            <Label for="email" class="mb-2">Email</Label>
+                            <Input type="email" id="email" class="h-12" placeholder="e.g prabowo@gmail.com" />
                         </div>
 
-                        <div class="flex flex-row gap-10">
-                            <div class="flex flex-col w-1/2">
-                                <Label for="password" class="mb-2">Password</Label>
-                                <Input type="password" id="password" class="h-12" placeholder="Enter password" />
-                            </div>
-                            <div class="flex flex-col w-1/2">
-                                <Label for="confirmPassword" class="mb-2">Confirm Password</Label>
-                                <Input type="password" id="confirmPassword" class="h-12"
-                                    placeholder="Confirm password" />
-                            </div>
+                        <div class="flex flex-col w-full">
+                            <Label for="password" class="mb-2">Password</Label>
+                            <Input type="password" id="password" class="h-12" placeholder="Enter password" />
                         </div>
                     </form>
+                    <div class="flex items-center space-x-2 mt-5">
+                        <Checkbox id="terms" class="bg-[#DFD7FF]" />
+                        <label for="terms"
+                            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                            Remember me
+                        </label>
+                    </div>
                 </CardContent>
                 <CardFooter class="flex flex-col gap-5 mb-10">
-                    <Button class="w-full h-12 bg-[#5476FF]">Register</Button>
+                    <Button class="w-full h-12 bg-[#5476FF]">Login</Button>
                     <img src="/Frame 1618869405.png" class="w-full">
                     <div class="flex flex-row justify-between w-full gap-10">
                         <div class="border flex flex-row items-center h-12 pe-2 ps-2 rounded-md w-1/2 cursor-pointer">
@@ -67,8 +62,8 @@ import { Button } from '@/components/ui/button'
                             <p class="ml-2">Continue with Google</p>
                         </div>
                         <div class="border flex flex-row items-center h-12 pe-2 ps-2 rounded-md w-1/2 cursor-pointer">
-                            <img src="/flat-color-icons_google.png">
-                            <p class="ml-2">Continue with Google</p>
+                            <img src="/skill-icons_linkedin.png">
+                            <p class="ml-2">Continue with Linked In</p>
                         </div>
                     </div>
                 </CardFooter>

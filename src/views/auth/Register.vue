@@ -66,8 +66,8 @@ import { Button } from '@/components/ui/button'
                             <p class="ml-2">Continue with Google</p>
                         </div>
                         <div class="border flex flex-row items-center h-12 pe-2 ps-2 rounded-md w-1/2 cursor-pointer">
-                            <img src="/flat-color-icons_google.png">
-                            <p class="ml-2">Continue with Google</p>
+                            <img src="/skill-icons_linkedin.png">
+                            <p class="ml-2">Continue with Linked In</p>
                         </div>
                     </div>
                 </CardFooter>
