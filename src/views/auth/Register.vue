@@ -56,11 +56,13 @@ import { Button } from '@/components/ui/button'
                     <Button class="w-full h-12 bg-[#5476FF]">Register</Button>
                     <img src="/Frame 1618869405.png" class="w-full">
                     <div class="flex flex-row justify-between w-full gap-10">
-                        <div class="border flex flex-row items-center h-12 pe-2 ps-2 rounded-md w-1/2 cursor-pointer">
+                        <div
+                            class="border flex flex-row items-center h-12 pe-2 ps-2 rounded-md w-1/2 cursor-pointer justify-center">
                             <img src="/flat-color-icons_google.png">
                             <p class="ml-2">Continue with Google</p>
                         </div>
-                        <div class="border flex flex-row items-center h-12 pe-2 ps-2 rounded-md w-1/2 cursor-pointer">
+                        <div
+                            class="border flex flex-row items-center h-12 pe-2 ps-2 rounded-md w-1/2 cursor-pointer justify-center">
                             <img src="/skill-icons_linkedin.png">
                             <p class="ml-2">Continue with Linked In</p>
                         </div>
