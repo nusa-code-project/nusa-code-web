@@ -19,11 +19,6 @@ import { Button } from '@/components/ui/button'
 
         <div class="flex justify-around w-full relative z-10">
             <div class="flex flex-col items-center text-2xl mt-10">
-                <h1 class="bg-gradient-to-br from-[#0033FF] to-[#977DFF] bg-clip-text text-transparent font-bold">
-                    Wujudkan Mimpi Menjadi The Next Tech
-                </h1>
-                <h1 class="mb-3 bg-gradient-to-br from-[#0033FF] to-[#977DFF] bg-clip-text text-transparent font-bold">
-                    Leader Bersama NusaCode!</h1>
                 <img src="/Frame 1618869415.png" class="mb-10" width="500" height="600" alt="" />
             </div>
 
