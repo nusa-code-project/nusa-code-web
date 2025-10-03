@@ -171,7 +171,8 @@ const courses = [
     <section class="recomendation ps-9.5 pt-15">
         <h1 class="text-2xl font-bold pb-3">Dirancang Khusus Untuk Kamu</h1>
         <div class="flex flex-row gap-5 flex-wrap">
-            <Card v-for="(card, index) in coursesRecomendation" :key="index" class="w-80">
+            <Card v-for="(card, index) in coursesRecomendation" :key="index"
+                class="w-80 border border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)]">
                 <CardHeader class="ps-2 pe-2">
                     <img :src="card.image" class="w-full" alt="">
 
@@ -188,16 +189,16 @@ const courses = [
                 </CardHeader>
 
                 <CardContent class="ps-2 pe-2 flex flex-row items-center gap-2">
-                    <img :src="card.avatar" width="30" alt="avatar">
+                    <img :src="card.avatar" width="40" alt="avatar">
                     <p class="text-[15px]">{{ card.author }}</p>
                 </CardContent>
 
                 <CardFooter class="ps-2 pe-2 flex flex-row justify-between">
                     <div class="flex flex-row items-center gap-2">
-                        <h2 class="text-[18px] font-bold">{{ card.rating.toFixed(1) }}</h2>
-                        <img v-for="i in 5" :key="i" src="/fi-sr-star.png" class="w-[18px] h-[18px]" alt="">
+                        <h2 class="text-[14px] font-bold">{{ card.rating.toFixed(1) }}</h2>
+                        <img v-for="i in 5" :key="i" src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="">
                     </div>
-                    <p class="font-bold bg-[#DFD7FF] p-2 rounded-2xl">
+                    <p class="font-bold bg-[#DFD7FF] pe-2 ps-2 rounded-md text-[14px]">
                         {{ card.price }}
                     </p>
                 </CardFooter>
@@ -211,7 +212,8 @@ const courses = [
             <p class="text-[#5476FF]">Lihat Semua</p>
         </div>
         <div class="flex flex-row items-center gap-5">
-            <Card v-for="(course, index) in coursesFavorite" :key="index" class="w-80">
+            <Card v-for="(course, index) in coursesFavorite" :key="index"
+                class="w-80 border border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)]">
                 <CardHeader class="ps-2 pe-2">
                     <img :src="course.img" class="w-full" alt="">
 
@@ -228,16 +230,16 @@ const courses = [
                 </CardHeader>
 
                 <CardContent class="ps-2 pe-2 flex flex-row items-center gap-2">
-                    <img :src="course.avatar" width="30" alt="avatar">
+                    <img :src="course.avatar" width="40" alt="avatar">
                     <p class="text-[15px]">{{ course.author }}</p>
                 </CardContent>
 
                 <CardFooter class="ps-2 pe-2 flex flex-row justify-between">
                     <div class="flex flex-row items-center gap-2">
-                        <h2 class="text-[18px] font-bold">{{ course.rating.toFixed(1) }}</h2>
-                        <img v-for="i in 5" :key="i" src="/fi-sr-star.png" class="w-[18px] h-[18px]" alt="">
+                        <h2 class="text-[14px] font-bold">{{ course.rating.toFixed(1) }}</h2>
+                        <img v-for="i in 5" :key="i" src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="">
                     </div>
-                    <p class="font-bold bg-[#DFD7FF] p-2 rounded-2xl">
+                    <p class="font-bold bg-[#DFD7FF] pe-2 ps-2 rounded-md text-[14px]">
                         {{ course.price }}
                     </p>
                 </CardFooter>
@@ -274,7 +276,8 @@ const courses = [
             <p class="text-[#5476FF]">Lihat Semua</p>
         </div>
         <div class="flex flex-row items-center gap-5">
-            <Card v-for="(course, index) in courses" :key="index" class="w-80">
+            <Card v-for="(course, index) in courses" :key="index"
+                class="w-80 border border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)]">
                 <CardHeader class="ps-2 pe-2">
                     <img :src="course.image" class="w-full" alt="" />
                     <CardTitle class="text-[18px] overflow-hidden text-ellipsis min-h-[48px]"
@@ -288,17 +291,16 @@ const courses = [
                 </CardHeader>
 
                 <CardContent class="ps-2 pe-2 flex flex-row items-center gap-2">
-                    <img :src="course.avatar" width="30" alt="avatar" />
+                    <img :src="course.avatar" width="40" alt="avatar" />
                     <p class="text-[15px]">{{ course.author }}</p>
                 </CardContent>
 
                 <CardFooter class="ps-2 pe-2 flex flex-row justify-between">
                     <div class="flex flex-row items-center gap-2">
-                        <h2 class="text-[18px] font-bold">{{ course.rating.toFixed(1) }}</h2>
-                        <img v-for="i in 5" :key="i" src="/fi-sr-star.png" class="w-[18px] h-[18px]" alt="star" />
+                        <h2 class="text-[14px] font-bold">{{ course.rating.toFixed(1) }}</h2>
+                        <img v-for="i in 5" :key="i" src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="star" />
                     </div>
-                    <p
-                        class="font-bold bg-[#BCF4B1] p-2 rounded-2xl w-20 text-center h-8 flex items-center justify-center">
+                    <p class="font-bold bg-[#BCF4B1] pe-3 ps-3 rounded-md text-[14px]">
                         {{ course.price }}
                     </p>
                 </CardFooter>
