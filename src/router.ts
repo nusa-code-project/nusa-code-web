@@ -4,6 +4,7 @@ import Login from './views/auth/Login.vue'
 import Home from './views/Home.vue'
 import JalurBelajar from './views/Jalur-Belajar.vue'
 import LearningJourney from './views/Learning-Journey.vue'
+import CourseContent from './views/Course-Content.vue'
 
 const routes = [
     { path: '/register', component: Register },
@@ -11,6 +12,7 @@ const routes = [
     { path: '/', component: Home },
     { path: '/jalur-belajar', component: JalurBelajar },
     { path: '/learning-journey', component: LearningJourney },
+    { path: '/course-content', component: CourseContent },
 ]
 
 const router = createRouter({
