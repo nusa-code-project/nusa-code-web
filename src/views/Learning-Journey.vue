@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Progress } from '@/components/ui/progress'
-import Button from '../components/ui/button/Button.vue';
+import { Button } from '@/components/ui/button'
 </script>
 
 <template>
