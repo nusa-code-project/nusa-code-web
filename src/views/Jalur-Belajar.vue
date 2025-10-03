@@ -1,6 +1,4 @@
-<script setup>
-import { ref } from 'vue'
-
+<script setup lang="ts">
 // Contoh data tanggal dari gambar
 const dates = [
     '1 - 31 Oktober 2025',
