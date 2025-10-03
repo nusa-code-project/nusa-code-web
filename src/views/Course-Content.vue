@@ -67,28 +67,28 @@ import {
             </Card>
         </div>
 
-        <div class="w-1/2 p-8 bg-white overflow-y-auto max-h-screen hide-scrollbar">
+        <div class="w-1/2 ps-8 pt-8 pb-8 bg-white overflow-y-auto max-h-screen hide-scrollbar">
             <Button class="w-[119px] text-[20px] h-12 bg-[#5476FF] me-3">Section</Button>
             <Button
                 class="w-[119px] text-[20px] h-12 bg-transparent text-[#5476FF] rounded-lg border-1 ms-3 border-[#5476FF]">Project</Button>
-            <img src="/Frame 1618869490.png" oncontextmenu="return false;" class="mt-5" alt="">
-            <img src="/Frame 1618869496.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869498.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869499.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869500.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869501.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869502.png" oncontextmenu="return false;" class="mt-5" alt="">
-            <img src="/Frame 1618869503.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869510.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869508.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869509.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869511.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869502.png" oncontextmenu="return false;" class="mt-5" alt="">
-            <img src="/Frame 1618869513.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869514.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869515.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869516.png" oncontextmenu="return false;" alt="">
-            <img src="/Frame 1618869517.png" oncontextmenu="return false;" alt="">
+            <img src="/Frame 1618869490.png" oncontextmenu="return false;" class="mt-5 w-full" alt="">
+            <img src="/Frame 1618869496.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869498.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869499.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869500.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869501.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869502.png" oncontextmenu="return false;" class="mt-5 w-full" alt="">
+            <img src="/Frame 1618869503.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869510.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869508.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869509.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869511.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869502.png" oncontextmenu="return false;" class="mt-5 w-full" alt="">
+            <img src="/Frame 1618869513.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869514.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869515.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869516.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869517.png" oncontextmenu="return false;" class="w-full" alt="">
         </div>
     </div>
 </template>
