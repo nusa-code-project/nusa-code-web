@@ -161,7 +161,8 @@ const courses = [
 </script>
 
 <template>
-    <section class="jumbotron flex flex-row items-center justify-between ps-10 pt-20 pe-10">
+    <section
+        class="jumbotron flex flex-row items-center justify-between ps-10 pe-10 bg-[linear-gradient(to_top,#ffffff_0%,#f5f2ff_50%,#e6ebff_100%)]  h-[394px]">
         <img src="/Bingung Mau ke Mana_ Tentukan Jalur IT Kamu & Jadi The Next Tech Leader.png" alt="text" width="500">
         <Button class="bg-[#5476FF] h-12">
             Temukan Jalur IT Kamu
