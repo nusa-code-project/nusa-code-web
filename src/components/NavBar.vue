@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import ProfileAvatar from '@/assets/Ellipse 17.png'
 </script>
 
 <template>
@@ -31,10 +30,9 @@ import ProfileAvatar from '@/assets/Ellipse 17.png'
         <div class="navbar-end gap-2 pe-8">
             <img src="/Frame 1618869483.png" width="30" alt="">
             <img src="/Frame 1618869484.png" width="30" alt="">
-            <Avatar>
-                <AvatarImage :src="ProfileAvatar" alt="@unovue" />
-                <AvatarFallback>CN</AvatarFallback>
-            </Avatar>
+            <div class="w-6 rounded-full">
+                <img alt="Tailwind CSS Navbar component" src="../../public/Ellipse 17.png" />
+            </div>
         </div>
     </nav>
 </template>
