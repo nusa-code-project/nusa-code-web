@@ -173,10 +173,17 @@ const courses = [
             <Card v-for="(card, index) in coursesRecomendation" :key="index" class="w-80">
                 <CardHeader class="ps-2 pe-2">
                     <img :src="card.image" class="w-full" alt="">
-                    <CardTitle class="text-[18px]">{{ card.title }}</CardTitle>
-                    <CardDescription class="pe-2 text-[12px]">
+
+                    <CardTitle class="text-[18px] overflow-hidden text-ellipsis min-h-[48px]"
+                        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                        {{ card.title }}
+                    </CardTitle>
+
+                    <CardDescription class="pe-2 text-[12px] overflow-hidden min-h-[36px]"
+                        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
                         {{ card.description }}
                     </CardDescription>
+
                 </CardHeader>
 
                 <CardContent class="ps-2 pe-2 flex flex-row items-center gap-2">
@@ -194,6 +201,7 @@ const courses = [
                     </p>
                 </CardFooter>
             </Card>
+
         </div>
     </section>
     <section class="course-favorite ps-9.5 pt-15">
@@ -204,22 +212,29 @@ const courses = [
         <div class="flex flex-row items-center gap-5">
             <Card v-for="(course, index) in coursesFavorite" :key="index" class="w-80">
                 <CardHeader class="ps-2 pe-2">
-                    <img :src="course.img" class="w-full" alt="" />
-                    <CardTitle class="text-[18px]">{{ course.title }}</CardTitle>
-                    <CardDescription class="pe-2 text-[12px]">
+                    <img :src="course.img" class="w-full" alt="">
+
+                    <CardTitle class="text-[18px] overflow-hidden text-ellipsis min-h-[48px]"
+                        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                        {{ course.title }}
+                    </CardTitle>
+
+                    <CardDescription class="pe-2 text-[12px] overflow-hidden min-h-[36px]"
+                        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
                         {{ course.description }}
                     </CardDescription>
+
                 </CardHeader>
 
                 <CardContent class="ps-2 pe-2 flex flex-row items-center gap-2">
-                    <img :src="course.avatar" width="30" alt="avatar" />
+                    <img :src="course.avatar" width="30" alt="avatar">
                     <p class="text-[15px]">{{ course.author }}</p>
                 </CardContent>
 
                 <CardFooter class="ps-2 pe-2 flex flex-row justify-between">
                     <div class="flex flex-row items-center gap-2">
-                        <h2 class="text-[18px] font-bold">{{ course.rating }}</h2>
-                        <img v-for="n in 5" :key="n" src="/fi-sr-star.png" class="w-[18px] h-[18px]" alt="star" />
+                        <h2 class="text-[18px] font-bold">{{ course.rating.toFixed(1) }}</h2>
+                        <img v-for="i in 5" :key="i" src="/fi-sr-star.png" class="w-[18px] h-[18px]" alt="">
                     </div>
                     <p class="font-bold bg-[#DFD7FF] p-2 rounded-2xl">
                         {{ course.price }}
@@ -243,9 +258,13 @@ const courses = [
                     <h1 class="text-[15px] font-bold text-center">
                         {{ mentor.name }}
                     </h1>
-                    {{ mentor.job }}
+                    <p class="overflow-hidden text-ellipsis text-[12px] max-w-[10rem]"
+                        style="-webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 2;">
+                        {{ mentor.job }}
+                    </p>
                 </CardFooter>
             </Card>
+
         </div>
     </section>
     <section class="specialisasi ps-9.5 pt-15">
@@ -257,8 +276,12 @@ const courses = [
             <Card v-for="(course, index) in courses" :key="index" class="w-80">
                 <CardHeader class="ps-2 pe-2">
                     <img :src="course.image" class="w-full" alt="" />
-                    <CardTitle class="text-[18px]">{{ course.title }}</CardTitle>
-                    <CardDescription class="pe-2 text-[12px]">
+                    <CardTitle class="text-[18px] overflow-hidden text-ellipsis min-h-[48px]"
+                        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                        {{ course.title }}
+                    </CardTitle>
+                    <CardDescription class="pe-2 text-[12px] overflow-hidden min-h-[36px]"
+                        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
                         {{ course.description }}
                     </CardDescription>
                 </CardHeader>
