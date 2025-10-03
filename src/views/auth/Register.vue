@@ -19,12 +19,7 @@ import { Button } from '@/components/ui/button'
 
         <div class="flex justify-around w-full relative z-10">
             <div class="flex flex-col items-center text-2xl mt-10">
-                <h1 class="bg-gradient-to-br from-[#0033FF] to-[#977DFF] bg-clip-text text-transparent font-bold">
-                    Wujudkan Mimpi Menjadi The Next Tech
-                </h1>
-                <h1 class="mb-3 bg-gradient-to-br from-[#0033FF] to-[#977DFF] bg-clip-text text-transparent font-bold">
-                    Leader Bersama NusaCode!</h1>
-                <img src="/Frame 1618869415.png" class="mb-10" width="500" height="600" alt="" />
+                <img src="/Frame 1618869416.png" class="mb-10" width="500" height="600" alt="" />
             </div>
 
             <Card class="w-150 flex justify-center z-10">
@@ -61,11 +56,13 @@ import { Button } from '@/components/ui/button'
                     <Button class="w-full h-12 bg-[#5476FF]">Register</Button>
                     <img src="/Frame 1618869405.png" class="w-full">
                     <div class="flex flex-row justify-between w-full gap-10">
-                        <div class="border flex flex-row items-center h-12 pe-2 ps-2 rounded-md w-1/2 cursor-pointer">
+                        <div
+                            class="border flex flex-row items-center h-12 pe-2 ps-2 rounded-md w-1/2 cursor-pointer justify-center">
                             <img src="/flat-color-icons_google.png">
                             <p class="ml-2">Continue with Google</p>
                         </div>
-                        <div class="border flex flex-row items-center h-12 pe-2 ps-2 rounded-md w-1/2 cursor-pointer">
+                        <div
+                            class="border flex flex-row items-center h-12 pe-2 ps-2 rounded-md w-1/2 cursor-pointer justify-center">
                             <img src="/skill-icons_linkedin.png">
                             <p class="ml-2">Continue with Linked In</p>
                         </div>
