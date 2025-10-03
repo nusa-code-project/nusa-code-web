@@ -1,6 +1,41 @@
 <script setup lang="ts">
 import { Progress } from '@/components/ui/progress'
 import { Button } from '@/components/ui/button'
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from '@/components/ui/card'
+
+const mentors = [
+    {
+        id: 1,
+        name: "Sonny Philo",
+        role: "IT Project Manager @ Pertamina Oil & Gas",
+        image: "/Ellipse 21.png"
+    },
+    {
+        id: 2,
+        name: "Sonny Philo",
+        role: "IT Project Manager @ Pertamina Oil & Gas",
+        image: "/Ellipse 21.png"
+    },
+    {
+        id: 3,
+        name: "Sonny Philo",
+        role: "IT Project Manager @ Pertamina Oil & Gas",
+        image: "/Ellipse 21.png"
+    },
+    {
+        id: 4,
+        name: "Sonny Philo",
+        role: "IT Project Manager @ Pertamina Oil & Gas",
+        image: "/Ellipse 21.png"
+    }
+];
 </script>
 
 <template>
