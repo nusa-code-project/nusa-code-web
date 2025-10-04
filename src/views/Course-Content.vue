@@ -6,10 +6,22 @@ import {
     CardHeader,
     CardTitle,
 } from '@/components/ui/card'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { ref } from "vue";
+
+const buy = ref(true);
+
+const skills = [
+    "Leadership",
+    "Product Management",
+    "Change Management",
+    "GTM Strategy",
+    "Product Roadmap",
+];
 </script>
 
 <template>
-    <div class="flex min-h-screen">
+    <div v-if="buy" class="flex min-h-screen">
         <div class="w-1/2 p-8 overflow-y-auto max-h-screen hide-scrollbar">
             <img src="/Rectangle 268.png" alt="Roadmap" class="w-full h-auto rounded-lg mb-6">
             <h1 class="text-[35.3px] font-bold mb-4">Building Product Roadmaps With Confidence</h1>
@@ -89,6 +101,98 @@ import {
             <img src="/Frame 1618869515.png" oncontextmenu="return false;" class="w-full" alt="">
             <img src="/Frame 1618869516.png" oncontextmenu="return false;" class="w-full" alt="">
             <img src="/Frame 1618869517.png" oncontextmenu="return false;" class="w-full" alt="">
+        </div>
+    </div>
+
+    <div v-if="!buy">
+        <section
+            class="jumbotron flex justify-start p-10 mt-10 flex-col bg-gradient-to-b from-[#DAF4FB] to-[#FFFFFF] [background-position:0%_0%,0%_65%]">
+            <h1 class="text-2xl font-bold">Building Product Roadmaps With Confidence</h1>
+            <div class="flex flex-row justify-between items-center">
+                <p>Pelajari cara menyusun roadmap produk yang jelas, terarah, dan meyakinkan untuk tim serta stakeholder
+                    eksekutif.</p>
+                <Button class="bg-[#5476FF] h-12 rounded-xl">Belajar Sekarang</Button>
+            </div>
+            <div class="flex flex-row justify-start gap-3 items-center pt-3">
+                <Avatar class="w-10 h-10">
+                    <AvatarImage src="/Ellipse 28.png" alt="@unovue" />
+                    <AvatarFallback>CN</AvatarFallback>
+                </Avatar>
+                <p class="font-semibold">Marcus Aurelius</p>
+                <div class="flex items-center justify-center ms-5 bg-[#dfd7ff] p-1 rounded-xl">
+                    <img src="/fi-br-money.png" alt="" class="ms-1">
+                    <p class="ms-2 font-semibold me-1">Rp 399.999</p>
+                </div>
+                <div class="flex flex-row gap-2 items-center ms-5">
+                    <p class="font-semibold">5.0</p>
+                    <img src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="">
+                    <img src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="">
+                    <img src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="">
+                    <img src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="">
+                    <img src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="">
+                    <img src="/fi-sr-user.png" class="w-5 h-5 ms-5" alt="">
+                    <p class="font-semibold">595,555 Enrolled</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex gap-6 p-6">
+            <div class="w-1/2">
+                <img src="/Rectangle 268 (1).png" alt="Deskripsi Kursus" class="rounded-lg w-full h-auto" />
+                <h2 class="text-lg font-bold mt-4">Deskripsi Kursus</h2>
+                <p class="mt-2 text-sm text-gray-600">
+                    Kursus ini akan membimbing kamu memahami bagaimana menyusun roadmap produk yang kuat, jelas, dan
+                    relevan dengan kebutuhan pasar. Kamu akan mempelajari prinsip dasar perencanaan produk, teknik
+                    menentukan prioritas fitur dengan metode seperti RICE atau MoSCoW, serta cara menghubungkan roadmap
+                    dengan visi dan strategi bisnis. Selain itu, kursus ini juga membekali kamu dengan keterampilan
+                    komunikasi agar roadmap yang dibuat dapat dipresentasikan dengan percaya diri kepada stakeholder
+                    maupun tim lintas fungsi.
+
+                    Melalui kombinasi teori, studi kasus, dan latihan praktis, kamu akan memperoleh pengalaman langsung
+                    merancang roadmap yang tidak hanya realistis tetapi juga mampu menjadi panduan strategis dalam
+                    mengarahkan pengembangan produk jangka panjang. Pada akhir kursus, kamu akan lebih siap menghadapi
+                    tantangan product management sekaligus meningkatkan peluang keberhasilan produk di pasar.
+                </p>
+            </div>
+
+            <div class="w-1/2 space-y-4">
+                <div class="p-4 border border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] rounded-lg">
+                    <h3 class="font-bold text-3xl mb-5">Kursus Ini Mencakup</h3>
+                    <img src="/Frame 1618869427.png" alt="">
+                </div>
+
+                <div class="p-4 border border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] rounded-lg">
+                    <h3 class="font-bold text-3xl mb-5">Skill Yang Kamu Dapat</h3>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span v-for="(tag, index) in skills" :key="index"
+                            class="bg-[#dfd7ff] text-black px-2 py-1 rounded-md">
+                            {{ tag }}
+                        </span>
+                    </div>
+                </div>
+
+                <div
+                    class="p-4 border border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] rounded-lg gap-4 flex flex-col">
+                    <h3 class="font-bold text-3xl">Profile Mentor</h3>
+                    <div class="flex flex-row gap-5">
+                        <img src="/Ellipse 28.png" class="w-15 h-15" alt=""></img>
+                        <div class="flex flex-col">
+                            <p>Marcus Aurelius</p>
+                            <div class="flex flex-row gap-2 items-center mt-2">
+                                <p class="font-semibold">5.0</p>
+                                <img src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="">
+                                <img src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="">
+                                <img src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="">
+                                <img src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="">
+                                <img src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <p>Hartono Susanto adalah Product Manager berpengalaman di Gojek, Tokopedia, dan Traveloka, dengan
+                        keahlian dalam product strategy, roadmap planning, serta Agile. Ia juga aktif membimbing talenta
+                        muda melalui program mentoring di RevoU.</p>
+                </div>
+            </div>
         </div>
     </div>
 </template>
