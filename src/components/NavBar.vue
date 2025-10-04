@@ -32,7 +32,7 @@
             <img src="/Frame 1618869483.png" width="30" alt="">
             <img src="/Frame 1618869484.png" width="30" alt="">
             <div class="w-6 rounded-full">
-                <img alt="Tailwind CSS Navbar component" src="../../public/Ellipse 17.png" />
+                <img alt="Tailwind CSS Navbar component" src="/Ellipse 17.png" />
             </div>
         </div>
     </nav>
