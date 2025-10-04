@@ -34,11 +34,11 @@ import { Button } from '@/components/ui/button'
                 <p>Button</p>
             </Button>
         </div>
-        <div class="absolute bottom-0 left-0 w-[650px] h-[530px] bg-cover z-0"
-            style="background-image: url('/Ellipse 1.png')"></div>
+        <div class="absolute bottom-0 left-0 w-[650px] h-[200px] bg-cover z-0"
+            style="background-image: url('/Ellipse 1 (1).png')"></div>
 
-        <div class="absolute bottom-0 right-0 w-[650px] h-[530px] bg-cover z-0"
-            style="background-image: url('/Ellipse 3.png')"></div>
+        <div class="absolute bottom-0 right-0 w-[650px] h-[200px] bg-cover z-0"
+            style="background-image: url('/Ellipse 2 (2).png')"></div>
     </div>
 </template>
 
