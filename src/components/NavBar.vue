@@ -1,9 +1,8 @@
 <script lang="ts" setup>
-import ProfileAvatar from '@/assets/Ellipse 17.png'
 </script>
 
 <template>
-    <nav class="navbar bg-base-100">
+    <nav class="navbar bg-white text-black">
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -13,8 +12,9 @@ import ProfileAvatar from '@/assets/Ellipse 17.png'
                             d="M4 6h16M4 12h8m-8 6h16" />
                     </svg>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li><a>AI Assesment</a></li>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-white text-black rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a>AI Learning Hub</a></li>
                     <li><a>Home</a></li>
                     <li><a>Roadmap Belajar</a></li>
                 </ul>
@@ -23,7 +23,7 @@ import ProfileAvatar from '@/assets/Ellipse 17.png'
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-                <li><a class="hover:bg-transparent hover:text-current">AI Assesment</a></li>
+                <li><a class="hover:bg-transparent hover:text-current">AI Learning Hub</a></li>
                 <li><a class="hover:bg-transparent hover:text-current">Home</a></li>
                 <li><a class="hover:bg-transparent hover:text-current">Roadmap Belajar</a></li>
             </ul>
@@ -31,10 +31,9 @@ import ProfileAvatar from '@/assets/Ellipse 17.png'
         <div class="navbar-end gap-2 pe-8">
             <img src="/Frame 1618869483.png" width="30" alt="">
             <img src="/Frame 1618869484.png" width="30" alt="">
-            <Avatar>
-                <AvatarImage :src="ProfileAvatar" alt="@unovue" />
-                <AvatarFallback>CN</AvatarFallback>
-            </Avatar>
+            <div class="w-6 rounded-full">
+                <img alt="Tailwind CSS Navbar component" src="/Ellipse 17.png" />
+            </div>
         </div>
     </nav>
 </template>
