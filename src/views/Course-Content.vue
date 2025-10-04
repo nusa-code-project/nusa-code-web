@@ -9,7 +9,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { ref } from "vue";
 
-const buy = ref(true);
+const buy = ref(false);
 
 const skills = [
     "Leadership",
@@ -22,7 +22,7 @@ const skills = [
 
 <template>
     <div v-if="buy" class="flex min-h-screen">
-        <div class="w-1/2 p-8 overflow-y-auto max-h-screen hide-scrollbar">
+        <div class="w-1/2 pe-8 ps-8 pb-8 overflow-y-auto max-h-screen hide-scrollbar">
             <img src="/Rectangle 268.png" alt="Roadmap" class="w-full h-auto rounded-lg mb-6">
             <h1 class="text-[35.3px] font-bold mb-4">Building Product Roadmaps With Confidence</h1>
             <div class="flex justify-between items-center">
@@ -79,7 +79,7 @@ const skills = [
             </Card>
         </div>
 
-        <div class="w-1/2 ps-8 pt-8 pb-8 bg-white overflow-y-auto max-h-screen hide-scrollbar">
+        <div class="w-1/2 pe-8 ps-8 pb-8 bg-white overflow-y-auto max-h-screen hide-scrollbar">
             <Button class="w-[119px] text-[20px] h-12 bg-[#5476FF] me-3">Section</Button>
             <Button
                 class="w-[119px] text-[20px] h-12 bg-transparent text-[#5476FF] rounded-lg border-1 ms-3 border-[#5476FF]">Project</Button>
@@ -106,7 +106,7 @@ const skills = [
 
     <div v-if="!buy">
         <section
-            class="jumbotron flex justify-start p-10 mt-10 flex-col bg-gradient-to-b from-[#DAF4FB] to-[#FFFFFF] [background-position:0%_0%,0%_65%]">
+            class="jumbotron flex justify-start p-10 flex-col bg-gradient-to-b from-[#DAF4FB] to-[#FFFFFF] [background-position:0%_0%,0%_65%]">
             <h1 class="text-2xl font-bold">Building Product Roadmaps With Confidence</h1>
             <div class="flex flex-row justify-between items-center">
                 <p>Pelajari cara menyusun roadmap produk yang jelas, terarah, dan meyakinkan untuk tim serta stakeholder
