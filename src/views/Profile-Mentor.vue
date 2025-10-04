@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Button } from '@/components/ui/button'
 </script>
 
 <template>
@@ -28,5 +29,16 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
                 product strategy, roadmap planning, serta metode Agile. Ia juga aktif membimbing talenta muda melalui
                 program mentoring di RevoU.</p>
         </div>
+    </section>
+    <section class="social-media-mentor p-10 flex flex-row justify-start gap-2">
+        <Button class="bg-[#5476FF] w-14">Follow</Button>
+        <Button class="bg-[#5476FF] flex flex-row gap-2 justify-center w-35 p-0">
+            <img src="/pajamas_linkedin.png" alt="" class="w-6 h-6">
+            <p>Lihat Linked In</p>
+        </Button>
+        <Button class="bg-[#5476FF] flex flex-row gap-2 justify-center w-37 p-0">
+            <img src="/icon-left.png" alt="" class="w-6 h-6">
+            <p>Lihat Portofolio</p>
+        </Button>
     </section>
 </template>
