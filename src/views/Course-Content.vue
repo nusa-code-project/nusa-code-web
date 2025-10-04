@@ -173,7 +173,10 @@ const skills = [
 
                 <div
                     class="p-4 border border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] rounded-lg gap-4 flex flex-col">
-                    <h3 class="font-bold text-3xl">Profile Mentor</h3>
+                    <div class="flex flex-row justify-between items-center">
+                        <h3 class="font-bold text-3xl">Profile Mentor</h3>
+                        <Button class="bg-[#5476FF] h-7 rounded-xl">Lihat Profil</Button>
+                    </div>
                     <div class="flex flex-row gap-5">
                         <img src="/Ellipse 28.png" class="w-15 h-15" alt=""></img>
                         <div class="flex flex-col">
