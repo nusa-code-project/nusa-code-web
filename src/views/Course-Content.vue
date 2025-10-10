@@ -9,7 +9,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { ref } from "vue";
 
-const buy = ref(false);
+const buy = ref(true);
 
 const skills = [
     "Leadership",
@@ -66,7 +66,7 @@ const skills = [
                 </CardContent>
             </Card>
 
-            <Card class="w-95 border border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] mt-5 h-45">
+            <Card class="w-95 border border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] mt-5 h-45 mb-15">
                 <CardHeader class="ps-2 pe-2 mb-0">
                     <CardTitle class="text-[18px] font-bold">
                         Kursus Ini Mencakup
@@ -100,7 +100,7 @@ const skills = [
             <img src="/Frame 1618869514.png" oncontextmenu="return false;" class="w-full" alt="">
             <img src="/Frame 1618869515.png" oncontextmenu="return false;" class="w-full" alt="">
             <img src="/Frame 1618869516.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869517.png" oncontextmenu="return false;" class="w-full" alt="">
+            <img src="/Frame 1618869517.png" oncontextmenu="return false;" class="w-full mb-15" alt="">
         </div>
     </div>
 
