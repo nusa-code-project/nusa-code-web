@@ -4,6 +4,7 @@ import Login from './views/auth/Login.vue'
 import CourseContent from './views/Course-Content.vue'
 import ProfileMentor from './views/Profile-Mentor.vue'
 import SubmitLatihan from './views/Submit-Latihan.vue'
+import JalurBelajar from './views/Jalur-Belajar.vue'
 
 const routes = [
     { path: '/register', component: Register },
@@ -11,6 +12,7 @@ const routes = [
     { path: '/course-content', component: CourseContent },
     { path: '/profile-mentor', component: ProfileMentor },
     { path: '/submit-latihan', component: SubmitLatihan },
+    { path: '/jalur-belajar', component: JalurBelajar },
 ]
 
 const router = createRouter({

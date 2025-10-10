@@ -4,14 +4,16 @@ import { Button } from '@/components/ui/button'
 </script>
 
 <template>
-    <div class="h-screen">
+    <div class="h-screen relative">
         <h1 class="text-center text-3xl font-bold mt-10">Yuk, Kumpulin Latihan Kamu!</h1>
         <Separator class="my-5 border-5 mx-auto !w-[96px] rounded-sm border-[#5476ff]" />
-        <p class="text-center">Tugas kamu upload di sini ya! inget, nama filenya harus mengikuti format ini
-            <span class="font-bold">NamaKamu_Latihan (No
-                Latihan).</span>
+        <p class="text-center">
+            Tugas kamu upload di sini ya! inget, nama filenya harus mengikuti format ini
+            <span class="font-bold">NamaKamu_Latihan (No Latihan).</span>
             Jangan sampai salah ya!
         </p>
+
+        <!-- Upload Box -->
         <div class="upload-content relative text-center border border-dashed pt-40 pb-40 ps-80 pe-80 rounded-xl border-[#595959] mt-10 w-[70%] mx-auto"
             style="border-width: 2px; border-color: #595959; border-style: dashed; border-radius: 1rem; border-spacing: 10rem;">
             <img src="/Untitled design (1) 1.png" alt="Folder Icon" class="folder-icon mx-auto" />
@@ -25,15 +27,20 @@ import { Button } from '@/components/ui/button'
                 Format PDF, max 100 MB
             </p>
         </div>
-        <div class="flex mx-auto justify-between ps-61 pe-61 pt-5">
-            <Button class="bg-[#5476FF] w-24 flex justify-center">
+
+        <!-- Tombol Back dan Next sejajar -->
+        <div class="flex justify-between mt-5 w-[70%] mx-auto">
+            <Button class="bg-[#5476FF] w-24 flex justify-center items-center gap-2">
                 <img src="/icon-left (1).png" alt="" class="w-6 h-6">
                 <p>Back</p>
             </Button>
-            <Button class="bg-[#5476FF] w-24">
-                <p>Button</p>
+
+            <Button class="bg-[#5476FF] w-24 flex justify-center items-center">
+                <p>Next</p>
             </Button>
         </div>
+
+        <!-- Background Ellipse -->
         <div class="absolute bottom-0 left-0 w-[650px] h-[200px] bg-cover z-0"
             style="background-image: url('/Ellipse 1 (1).png')"></div>
 
