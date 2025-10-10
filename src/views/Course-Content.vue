@@ -146,7 +146,7 @@ const skills = [
                     Yuk, kerjain dan kumpulin proyek akhirmu!</p>
             </div>
             <div v-if="category === 'project'"
-                class="upload-content relative flex flex-col items-center justify-center text-center border-2 border-dashed border-[#595959] rounded-xl w-[70%] mx-auto mt-10 py-20 px-10">
+                class="upload-content relative flex flex-col items-center justify-center text-center border-2 border-dashed border-[#595959] rounded-xl w-full mx-auto mt-10 py-20 px-10">
                 <img src="/Untitled design (1) 1.png" alt="Folder Icon" class="w-20 h-20 mb-6" />
 
                 <div class="space-y-2">
