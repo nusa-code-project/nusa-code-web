@@ -145,7 +145,7 @@ const skills = [
                 <p>Kamu udah sampai di tahap akhir! Sekarang waktunya kamu implementasiin ilmu yang udah kamu pelajari.
                     Yuk, kerjain dan kumpulin proyek akhirmu!</p>
             </div>
-            <div
+            <div v-if="category === 'project'"
                 class="upload-content relative flex flex-col items-center justify-center text-center border-2 border-dashed border-[#595959] rounded-xl w-[70%] mx-auto mt-10 py-20 px-10">
                 <img src="/Untitled design (1) 1.png" alt="Folder Icon" class="w-20 h-20 mb-6" />
 
@@ -165,7 +165,7 @@ const skills = [
                 </p>
             </div>
 
-            <div class="w-[70%] mx-auto mt-5 flex justify-end gap-5">
+            <div v-if="category === 'project'" class="w-[70%] mx-auto mt-5 flex justify-end gap-5">
                 <Button class="bg-[#5476FF] w-24 flex justify-center items-center">
                     <p>Submit</p>
                 </Button>
