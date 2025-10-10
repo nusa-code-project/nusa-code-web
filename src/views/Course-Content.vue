@@ -165,7 +165,7 @@ const skills = [
                 </p>
             </div>
 
-            <div v-if="category === 'project'" class="w-[70%] mx-auto mt-5 flex justify-end gap-5">
+            <div v-if="category === 'project'" class="w-full mx-auto mt-5 flex justify-end gap-5">
                 <Button class="bg-[#5476FF] w-24 flex justify-center items-center">
                     <p>Submit</p>
                 </Button>
