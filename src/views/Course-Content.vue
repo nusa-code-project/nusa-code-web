@@ -8,6 +8,43 @@ import {
 } from '@/components/ui/card'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { ref } from "vue";
+import { useRoute, useRouter } from 'vue-router'
+import { onMounted, watch, computed } from 'vue'
+
+const route = useRoute()
+const router = useRouter()
+
+const defaultCategory = 'section'
+const allowedCategories = ['section', 'project']
+
+const category = computed(() => (route.query.category as string) || defaultCategory)
+
+const updateCategory = (cat: string) => {
+    router.replace({
+        query: { ...route.query, category: cat }
+    })
+}
+
+onMounted(() => {
+    const currentCategory = route.query.category as string | undefined
+
+    if (!currentCategory || !allowedCategories.includes(currentCategory)) {
+        router.replace({
+            query: { ...route.query, category: defaultCategory }
+        })
+    }
+})
+
+watch(
+    () => route.query.category,
+    (newCategory) => {
+        if (!allowedCategories.includes(newCategory as string)) {
+            router.replace({
+                query: { ...route.query, category: defaultCategory }
+            })
+        }
+    }
+)
 
 const buy = ref(true);
 
@@ -80,9 +117,10 @@ const skills = [
         </div>
 
         <div class="w-1/2 pe-8 ps-8 pb-8 bg-white overflow-y-auto max-h-screen hide-scrollbar">
-            <Button class="w-[119px] text-[20px] h-12 bg-[#5476FF] me-3">Section</Button>
-            <Button
-                class="w-[119px] text-[20px] h-12 bg-transparent text-[#5476FF] rounded-lg border-1 ms-3 border-[#5476FF]">Project</Button>
+            <Button @click="updateCategory('section')"
+                :class="{ 'w-[119px] text-[20px] h-12 me-3 cursor-pointer': true, 'bg-[#5476FF] hover:bg-[#5476FF]': category === 'section', 'text-[#5476FF] hover:bg-transparent border-[#5476FF] bg-transparent border': category === 'project' }">Section</Button>
+            <Button @click="updateCategory('project')"
+                :class="{ 'w-[119px] text-[20px] h-12 rounded-lg border-1 ms-3 cursor-pointer': true, 'bg-[#5476FF] hover:bg-[#5476FF]': category === 'project', 'text-[#5476FF] border-[#5476FF] bg-transparent border hover:bg-transparent': category === 'section' }">Project</Button>
             <img src="/Frame 1618869490.png" oncontextmenu="return false;" class="mt-5 w-full" alt="">
             <img src="/Frame 1618869496.png" oncontextmenu="return false;" class="w-full" alt="">
             <img src="/Frame 1618869498.png" oncontextmenu="return false;" class="w-full" alt="">
