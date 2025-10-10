@@ -5,6 +5,7 @@ import CourseContent from './views/Course-Content.vue'
 import ProfileMentor from './views/Profile-Mentor.vue'
 import SubmitLatihan from './views/Submit-Latihan.vue'
 import JalurBelajar from './views/Jalur-Belajar.vue'
+import AiLearning from './views/Ai-Learning.vue'
 
 const routes = [
     { path: '/register', component: Register },
@@ -13,6 +14,7 @@ const routes = [
     { path: '/profile-mentor', component: ProfileMentor },
     { path: '/submit-latihan', component: SubmitLatihan },
     { path: '/jalur-belajar', component: JalurBelajar },
+    { path: '/ai-learning', component: AiLearning },
 ]
 
 const router = createRouter({

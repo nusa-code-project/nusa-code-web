@@ -166,3 +166,5 @@ const listCourses = [
     <br>
     <br>
 </template>
+
+<style></style>

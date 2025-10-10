@@ -49,7 +49,7 @@ import { Button } from '@/components/ui/button'
     </div>
 </template>
 
-<style>
+<style scoped>
 html,
 body {
     overflow: hidden;

@@ -273,7 +273,7 @@ const skills = [
     </div>
 </template>
 
-<style>
+<style scoped>
 .hide-scrollbar::-webkit-scrollbar {
     display: none;
 }
