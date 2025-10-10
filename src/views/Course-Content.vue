@@ -121,24 +121,59 @@ const skills = [
                 :class="{ 'w-[119px] text-[20px] h-12 me-3 cursor-pointer': true, 'bg-[#5476FF] hover:bg-[#5476FF]': category === 'section', 'text-[#5476FF] hover:bg-transparent border-[#5476FF] bg-transparent border': category === 'project' }">Section</Button>
             <Button @click="updateCategory('project')"
                 :class="{ 'w-[119px] text-[20px] h-12 rounded-lg border-1 ms-3 cursor-pointer': true, 'bg-[#5476FF] hover:bg-[#5476FF]': category === 'project', 'text-[#5476FF] border-[#5476FF] bg-transparent border hover:bg-transparent': category === 'section' }">Project</Button>
-            <img src="/Frame 1618869490.png" oncontextmenu="return false;" class="mt-5 w-full" alt="">
-            <img src="/Frame 1618869496.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869498.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869499.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869500.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869501.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869502.png" oncontextmenu="return false;" class="mt-5 w-full" alt="">
-            <img src="/Frame 1618869503.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869510.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869508.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869509.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869511.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869502.png" oncontextmenu="return false;" class="mt-5 w-full" alt="">
-            <img src="/Frame 1618869513.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869514.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869515.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869516.png" oncontextmenu="return false;" class="w-full" alt="">
-            <img src="/Frame 1618869517.png" oncontextmenu="return false;" class="w-full mb-15" alt="">
+            <div v-if="category === 'section'">
+                <img src="/Frame 1618869490.png" oncontextmenu="return false;" class="mt-5 w-full" alt="">
+                <img src="/Frame 1618869496.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869498.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869499.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869500.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869501.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869502.png" oncontextmenu="return false;" class="mt-5 w-full" alt="">
+                <img src="/Frame 1618869503.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869510.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869508.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869509.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869511.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869502.png" oncontextmenu="return false;" class="mt-5 w-full" alt="">
+                <img src="/Frame 1618869513.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869514.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869515.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869516.png" oncontextmenu="return false;" class="w-full" alt="">
+                <img src="/Frame 1618869517.png" oncontextmenu="return false;" class="w-full mb-15" alt="">
+            </div>
+            <div v-if="category === 'project'" class="bg-[#f5f2ff] mt-5 p-3 rounded-sm">
+                <p>Kamu udah sampai di tahap akhir! Sekarang waktunya kamu implementasiin ilmu yang udah kamu pelajari.
+                    Yuk, kerjain dan kumpulin proyek akhirmu!</p>
+            </div>
+            <div
+                class="upload-content relative flex flex-col items-center justify-center text-center border-2 border-dashed border-[#595959] rounded-xl w-[70%] mx-auto mt-10 py-20 px-10">
+                <img src="/Untitled design (1) 1.png" alt="Folder Icon" class="w-20 h-20 mb-6" />
+
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-bold">Drag atau Drop File Untuk Upload</h2>
+                    <p class="text-gray-600">
+                        Atau
+                        <strong class="text-[#335cff] underline cursor-pointer" ref="fileInput">
+                            browse
+                        </strong>
+                        file dari device kamu
+                    </p>
+                </div>
+
+                <p class="absolute bottom-4 left-4 text-left text-sm text-gray-500">
+                    Format PDF, max 100 MB
+                </p>
+            </div>
+
+            <div class="w-[70%] mx-auto mt-5 flex justify-end gap-5">
+                <Button class="bg-[#5476FF] w-24 flex justify-center items-center">
+                    <p>Submit</p>
+                </Button>
+
+                <Button class="bg-[#5476FF] w-24 flex justify-center items-center gap-2">
+                    <p>Guidebook</p>
+                </Button>
+            </div>
         </div>
     </div>
 
