@@ -103,7 +103,7 @@ const cardRoadmaps = ref([
     {
         title: 'Web Developer',
         badge: 'Web Dev',
-        description: 'Deskripsi jalur belajar Web Developerdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadsaaaaaaaaaaaaaaaaaadsaaaaaaaaaaaaaaaadsaaaaaaaaaaaaasdaaaaa',
+        description: 'Deskripsi jalur belajar Web Developerds',
         progress: 65,
         img: '/Vector (1).png',
         inProgress: false,
