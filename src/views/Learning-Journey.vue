@@ -92,7 +92,7 @@ const myCourse = ref([
 const cardRoadmaps = ref([
     {
         title: 'Product Manager',
-        badge: 'Product Manager',
+        badge: 'Belum Dimulai',
         description: 'Peta jalan ini menguraikan jalur pembelajaran menjadi seorang Product Manager, mulai dari tahap awal hingga posisi kepemimpinan',
         progress: 80,
         img: '/Vector.png',
@@ -101,8 +101,8 @@ const cardRoadmaps = ref([
         module: '4 Module',
     },
     {
-        title: 'Web Developer',
-        badge: 'Web Dev',
+        title: 'Data Analyst',
+        badge: 'Belum Dimulai',
         description: 'Deskripsi jalur belajar Web Developerds',
         progress: 65,
         img: '/Vector (1).png',
@@ -111,8 +111,8 @@ const cardRoadmaps = ref([
         module: '4 Module'
     },
     {
-        title: 'UI/UX Designer',
-        badge: 'UI/UX',
+        title: 'Product Design',
+        badge: 'Belum Dimulai',
         description: 'Deskripsi jalur belajar UI/UX …',
         progress: 90,
         img: '/Adobe_Express_-_file-removebg-preview.png',
@@ -142,8 +142,10 @@ const cardRoadmaps = ref([
             <div v-for="(card, idx) in cardRoadmaps" :key="idx"
                 class="relative border border-[#E6EBFF] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] w-90 p-3 rounded-xl flex flex-col">
                 <div class="flex justify-between items-center">
-                    <h2 class="text-xl font-semibold">{{ card.title }}</h2>
-                    <p class="text-sm bg-[#dfd7ff] ps-2 pe-2 pb-1 pt-1 rounded-xl">{{ card.badge }}</p>
+                    <h2 class="text-xl">{{ card.title }}</h2>
+                    <Badge class="bg-[#dfd7ff] text-black !ps-1 !pe-1 cursor-pointer rounded-xl hover:bg-[#dfd7ff]">
+                        {{ card.badge }}
+                    </Badge>
                 </div>
 
                 <p class="mt-2 text-[#454545] flex-1 min-h-0 break-words overflow-hidden"
