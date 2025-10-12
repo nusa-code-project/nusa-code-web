@@ -8,6 +8,8 @@ const showNavbar = computed(() => !['/login', '/register'].includes(route.path))
 </script>
 
 <template>
-  <NavBar v-if="showNavbar" />
-  <RouterView />
+  <div class="min-h-screen flex flex-col overflow-hidden">
+    <NavBar v-if="showNavbar" />
+    <RouterView />
+  </div>
 </template>
