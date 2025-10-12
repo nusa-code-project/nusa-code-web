@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { Progress } from '@/components/ui/progress'
 import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 
 const mentors = ref([
     {
@@ -24,6 +25,41 @@ const mentors = ref([
         image: '/Ellipse 23 (2).png',
         title: 'IT Consultant & Tech Analyst at Mckinsey'
     },
+])
+
+const myCourse = ref([
+    {
+        imageSrc: '/Rectangle 39 (4).png',
+        title: 'Product Management 101: From Idea to Launch',
+        description: 'Pelajari dasar-dasar product management dan kuasai langkah penting dari seorang ahli …',
+        authorAvatar: '/Ellipse 20.png',
+        authorName: 'Jonathan Christy',
+        rating: 5.0
+    },
+    {
+        imageSrc: '/Rectangle 39 (5).png',
+        title: 'Web Development Bootcamp',
+        description: 'Mulai dari HTML, CSS, JS hingga backend dengan hands-on projec…',
+        authorAvatar: '/Ellipse 21.png',
+        authorName: 'Siti Nurhaliza',
+        rating: 4.8
+    },
+    {
+        imageSrc: '/Rectangle 39 (6).png',
+        title: 'UI/UX Design Fundamentals',
+        description: 'Belajar prinsip desain, user research, prototyping, dan desain inter…',
+        authorAvatar: '/Ellipse 22.png',
+        authorName: 'Rafi Ahmad',
+        rating: 4.9
+    },
+    {
+        imageSrc: '/Rectangle 39 (7).png',
+        title: 'Become Expert in Data Analytics for Business',
+        description: 'Pelajari dasar-dasar penggunaan teknologi data analytics dalam meningkatkan',
+        authorAvatar: '/Ellipse 22.png',
+        authorName: 'Rafi Ahmad',
+        rating: 4.9
+    }
 ])
 
 const cardRoadmaps = ref([
@@ -112,6 +148,46 @@ const cardRoadmaps = ref([
             </div>
         </div>
     </section>
+
+    <section class="my-course mt-10 ms-20">
+        <div class="flex gap-5 items-center">
+            <h1 class="text-2xl font-bold">Kursus Yang Sudah Kamu Miliki</h1>
+            <p class="text-sm text-[#5476ff]">Filter By</p>
+        </div>
+        <div class="flex flex-row gap-5 mt-5">
+            <div v-for="(card, idx) in myCourse" :key="idx"
+                class="border border-[#E6EBFF] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] w-90 p-3 rounded-xl flex flex-col">
+                <img :src="card.imageSrc" alt="" class="rounded-lg w-full object-cover" />
+
+                <h1 class="text-2xl font-semibold mt-3 min-h-[60px] line-clamp-2 mb-1">
+                    {{ card.title }}
+                </h1>
+
+                <p
+                    class="mt-2 mb-1 text-[#454545] flex-1 min-h-[48px] max-h-[48px] break-words overflow-hidden line-clamp-2">
+                    {{ card.description }}
+                </p>
+
+                <div class="flex mt-2 items-center gap-2">
+                    <img :src="card.authorAvatar" alt="" class="w-6 h-6 rounded-full" />
+                    <p class="text-sm">{{ card.authorName }}</p>
+                </div>
+
+                <div class="flex justify-between items-center mt-3">
+                    <div class="flex items-center gap-3">
+                        <p class="font-semibold">{{ card.rating.toFixed(1) }}</p>
+                        <div class="flex gap-2">
+                            <img src="/fi-sr-star.png" alt="" class="w-4 h-4" v-for="i in 5" :key="i" />
+                        </div>
+                    </div>
+                    <Badge class="bg-[#dfd7ff] text-black !ps-3 !pe-3 font-semibold cursor-pointer hover:bg-[#dfd7ff]">
+                        Lanjutkan
+                    </Badge>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
 </template>
 
 <style scoped></style>
