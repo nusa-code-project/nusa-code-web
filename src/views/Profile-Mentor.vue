@@ -76,7 +76,7 @@ const listCourses = [
 
 <template>
     <section
-        class="jumbotron flex items-center justify-start p-10 flex-row bg-gradient-to-b from-[#DAF4FB] to-[#FFFFFF] [background-position:0%_0%,0%_65%]">
+        class="pt-20 jumbotron flex items-center justify-start p-10 flex-row bg-gradient-to-b from-[#DAF4FB] to-[#FFFFFF] [background-position:0%_0%,0%_65%]">
         <Avatar class="w-40 h-40">
             <AvatarImage src="/Ellipse 28.png" alt="@unovue" />
             <AvatarFallback>CN</AvatarFallback>
@@ -166,3 +166,5 @@ const listCourses = [
     <br>
     <br>
 </template>
+
+<style></style>
