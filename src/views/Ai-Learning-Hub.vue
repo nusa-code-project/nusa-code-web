@@ -3,8 +3,11 @@ import { Button } from '@/components/ui/button'
 </script>
 
 <template>
-    <section
-        class="pt-20 jumbotron flex flex-col items-center justify-start p-10 gap-10 bg-gradient-to-b from-[#e6ebff] to-[#FFFFFF] [background-position:0%_0%,0%_65%]">
+    <section class="pt-20 jumbotron flex flex-col items-center justify-start p-10 gap-10 bg-white
+    bg-gradient-to-b from-[#e6ebff] to-transparent
+    bg-no-repeat
+    [--gH:65%] [background-size:100%_var(--gH)] [background-position:0_0]
+    md:[--gH:50%]">
         <h1 class="font-bold text-center mx-auto pt-10 text-2xl" style="
             display:-webkit-box;
             -webkit-box-orient:vertical;
