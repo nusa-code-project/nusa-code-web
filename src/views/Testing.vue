@@ -4,22 +4,38 @@
     <br>
     <br>
     <br>
-    <div class="w-full flex flex-col items-center">
-        <div class="relative w-full max-w-5xl">
-            <!-- Garis Utama -->
-            <div class="absolute top-1/2 left-0 w-full h-[3px] bg-blue-200 rounded-full"></div>
 
-            <!-- Titik dan Label -->
-            <div v-for="(item, index) in timeline" :key="index"
-                class="relative inline-flex flex-col items-center text-center"
-                :style="{ left: `${(index / (timeline.length - 1)) * 100}%`, transform: 'translateX(-50%)' }">
-                <div class="w-4 h-4 bg-blue-600 border-4 border-white rounded-full shadow-md mb-2"></div>
-                <div class="bg-white border border-blue-200 text-sm px-3 py-1 rounded-lg shadow-sm">
-                    {{ item }}
-                </div>
-            </div>
+    <!-- Kartu -->
+    <!-- KARTU -->
+    <!-- CARD -->
+    <div class="relative rounded-2xl p-5 pb-24 shadow-sm
+         bg-gradient-to-r from-red-600 via-red-500 to-red-400
+         border border-red-700
+         [--cut:28px] [--gap:12px]
+         [-webkit-mask:radial-gradient(var(--cut)_at_calc(100%-var(--gap))_calc(100%-var(--gap)),transparent_98%,#000)]
+         [mask:radial-gradient(var(--cut)_at_calc(100%-var(--gap))_calc(100%-var(--gap)),transparent_98%,#000)]">
+
+        <h3 class="text-lg font-semibold">Memimpin Rapat Evaluasi dengan Sikap Terbuka dan Solutif</h3>
+        <p class="mt-2 text-sm">Score kamu adalah <span class="font-semibold">75/100</span></p>
+        <p class="mt-1 text-sm">Sudah cukup bagus, perlu dilatih lagi. Kamu masih punya 2 kali kesempatan</p>
+
+        <div class="mt-4 flex items-center gap-6 text-sm">
+            <span>✏️ 2/3 Kesempatan</span>
+            <span>Score: 75/100</span>
         </div>
+
+        <!-- BUTTON PIL DI POJOK KANAN BAWAH -->
+        <button class="absolute bottom-3 right-3 rounded-full bg-indigo-600 px-5 py-2
+           text-white shadow ring-2 ring-white">
+            Ulangi Skenario
+        </button>
     </div>
+
+
+
+
+
+
 </template>
 
 <script setup lang="ts">
