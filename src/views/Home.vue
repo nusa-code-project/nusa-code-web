@@ -7,6 +7,30 @@ import {
     CardHeader,
     CardTitle,
 } from '@/components/ui/card'
+import { ref } from 'vue'
+
+const mentors = ref([
+    {
+        name: 'Andreas Surya',
+        image: '/Ellipse 22.png',
+        title: 'Head of Business Development at CISCO'
+    },
+    {
+        name: 'Bimo Soewadji',
+        image: '/Ellipse 23.png',
+        title: 'CEO & Founder of CarbonEthics'
+    },
+    {
+        name: 'Jono Mulyono',
+        image: '/Ellipse 23 (1).png',
+        title: 'AI Researcher at Harvard Computer Science'
+    },
+    {
+        name: 'Mulyadi',
+        image: '/Ellipse 23 (2).png',
+        title: 'IT Consultant & Tech Analyst at Mckinsey'
+    },
+])
 
 const listCourses = [
     {
@@ -148,6 +172,21 @@ const listCourses = [
                     </p>
                 </CardFooter>
             </Card>
+        </div>
+    </section>
+
+    <section class="jumbotron pt-10 ms-10 flex flex-col">
+        <div class="flex flex-row items-center gap-2">
+            <h2 class="font-bold text-2xl">Mentor Favorit Nusaverse</h2>
+            <p class="text-xl text-[#5476FF]">Lihat Semua</p>
+        </div>
+        <div class="flex flex-row gap-5 mt-2">
+            <div v-for="(mentor, idx) in mentors" :key="idx"
+                class="mentor flex flex-col justify-center items-center p-3 w-50 gap-2">
+                <img :src="mentor.image" class="w-20" :alt="mentor.name" />
+                <h2 class="font-semibold text-xl">{{ mentor.name }}</h2>
+                <p class="text-center text-sm">{{ mentor.title }}</p>
+            </div>
         </div>
     </section>
 </template>
