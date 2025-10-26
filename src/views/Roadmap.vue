@@ -99,6 +99,83 @@
             </div>
         </div>
     </section>
+
+    <section class="mobile-dev flex flex-col ps-10 pt-10 gap-5">
+        <div class="flex flex-row items-center gap-2">
+            <h2 class="inline-block bg-clip-text text-transparent font-bold text-2xl mx-auto" style="background: linear-gradient(270deg, #977dff 0%, #002ee8 100%);
+           -webkit-text-fill-color: transparent;
+           -webkit-background-clip: text;
+           background-clip: text;">
+                Mobile Development
+            </h2>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Mobile App Developer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Mobile App Developer, dari dasar hingga mahir membuat
+                    aplikasi mobile profesional.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Cross-Platform Developer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Cross-Platform Developer, dari dasar hingga mahir membuat
+                    aplikasi mobile lintas platform.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Mobile Back-End</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Mobile Back-End Developer, dari dasar hingga mahir
+                    mengelola sistem untuk aplikasi mobile.</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Mobile Deployment Engineer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Mobile Deployment Engineer, dari dasar hingga mahir
+                    mengelola deployment aplikasi mobile.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">QA Mobile</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi QA Mobile, dari dasar testing hingga ahli menjaga kualitas
+                    aplikasi mobile.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Mobile Maintenance</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Mobile Maintenance, dari dasar hingga ahli dalam menjaga
+                    performa dan keamanan aplikasi mobile.</p>
+            </div>
+        </div>
+    </section>
     <br>
     <br>
 </template>
