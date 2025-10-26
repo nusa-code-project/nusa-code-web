@@ -30,4 +30,37 @@ import { Button } from '@/components/ui/button'
             <Button class="bg-[#5476FF] hover:bg-[#5476FF]">Mulai Assesment</Button>
         </div>
     </section>
+
+    <section class="melatih relative overflow-visible">
+        <h1 class="font-bold text-center mx-auto pt-10 text-2xl" style="
+      display:-webkit-box;
+      -webkit-box-orient:vertical;
+      -webkit-line-clamp:2;
+      overflow:hidden;
+      max-width:50ch;
+    ">
+            Latih Cara Kamu Berpikir, Bicara, dan Memimpin Bareng AI Role Play yang
+            <span class="inline-block bg-gradient-to-r from-[#002ee8] to-[#977dff] bg-clip-text text-transparent"
+                style="-webkit-text-fill-color: transparent;">
+                Siap Bikin Kamu Naik Level
+            </span>
+        </h1>
+
+        <br>
+
+        <!-- gambar utama tetap di tengah -->
+        <img src="/AI Role Play Chat 1.png" alt="" class="mx-auto relative z-10">
+
+        <!-- dekorasi kiri-atas -->
+        <img src="/Ellipse 2 ai learning hub.png" alt="" aria-hidden="true" class="pointer-events-none select-none
+              absolute left-0 top-0
+              w-24 sm:w-32 md:w-40 h-auto
+              -z-10">
+
+        <!-- dekorasi kanan-atas -->
+        <img src="/Ellipse 1 ai learning hub.png" alt="" aria-hidden="true" class="pointer-events-none select-none
+              absolute right-0 top-0
+              w-24 sm:w-32 md:w-40 h-auto
+              -z-10">
+    </section>
 </template>
