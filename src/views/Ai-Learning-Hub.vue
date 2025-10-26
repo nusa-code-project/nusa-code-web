@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Button } from '@/components/ui/button'
 </script>
 
 <template>
@@ -20,6 +21,13 @@
         <div class="flex flex-row gap-10">
             <img src="/AI Learning Assesment 2.png" alt="">
             <img src="/AI Learning Path (HASIL) 2.png" alt="">
+        </div>
+    </section>
+
+    <section class="assesment">
+        <div class="flex justify-between w-[75%] bg-gradient-to-r from-[#f5f2ff] p-5 rounded-xl to-[#e6ebff] mx-auto">
+            <h2 class="text-2xl font-bold">Mulai Langkahmu Jadi The Next Tech Leader Bareng Nusa AI</h2>
+            <Button class="bg-[#5476FF] hover:bg-[#5476FF]">Mulai Assesment</Button>
         </div>
     </section>
 </template>
