@@ -176,6 +176,83 @@
             </div>
         </div>
     </section>
+
+    <section class="product-ui-ux flex flex-col ps-10 pt-10 gap-5">
+        <div class="flex flex-row items-center gap-2">
+            <h2 class="inline-block bg-clip-text text-transparent font-bold text-2xl mx-auto" style="background: linear-gradient(270deg, #977dff 0%, #002ee8 100%);
+           -webkit-text-fill-color: transparent;
+           -webkit-background-clip: text;
+           background-clip: text;">
+                Product & UX
+            </h2>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Product Manager</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi Product Manager, dari memahami kebutuhan pengguna hingga memimpin
+                    strategi produk</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">UX Research</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi UX Researcher, dari metode riset dasar hingga menghasilkan insight
+                    untuk produk.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">UI Design</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi UI Designer, dari dasar desain visual hingga menciptakan antarmuka
+                    menarik dan konsisten.</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">UI/UX Designer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi UI/UX Designer, dari dasar UX dan UI hingga menciptakan produk digital
+                    efektif dan menarik</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Product Designer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi Product Designer, dari konsep produk hingga menyatukan UX, UI, dan
+                    strategi bisnis.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">UX Designer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi UX Designer, dari memahami pengguna hingga merancang pengalaman yang
+                    intuitif.</p>
+            </div>
+        </div>
+    </section>
     <br>
     <br>
 </template>
