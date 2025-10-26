@@ -253,6 +253,83 @@
             </div>
         </div>
     </section>
+
+    <section class="product-ui-ux flex flex-col ps-10 pt-10 gap-5">
+        <div class="flex flex-row items-center gap-2">
+            <h2 class="inline-block bg-clip-text text-transparent font-bold text-2xl mx-auto" style="background: linear-gradient(270deg, #977dff 0%, #002ee8 100%);
+           -webkit-text-fill-color: transparent;
+           -webkit-background-clip: text;
+           background-clip: text;">
+                Data & AI
+            </h2>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Data Analyst</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi Data Analyst, dari dasar pengolahan data hingga mahir menyajikan
+                    insight bisnis.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Data Scientist</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi Data Scientist, dari analisis data dasar hingga membangun model
+                    prediktif kompleks.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Data Engineer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi Data Engineer, dari dasar hingga membangun pipeline dan infrastruktur
+                    skala besar.</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Machine Learning Engineer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi Machine Learning Engineer, dari algoritma dasar hingga mengembangkan
+                    dan menerapkan model AI/ML.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">AI Researcher</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi AI Researcher, dari teori dasar hingga meneliti dan menciptakan
+                    inovasi berbasis AI.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Business Intelligence</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi BI, dari pengolahan data hingga menyajikan insight melalui dashboard
+                    dan visualisasi.</p>
+            </div>
+        </div>
+    </section>
     <br>
     <br>
 </template>
