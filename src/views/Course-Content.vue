@@ -179,7 +179,7 @@ const skills = [
 
     <div v-if="!buy">
         <section
-            class="jumbotron flex justify-start p-10 flex-col bg-gradient-to-b from-[#DAF4FB] to-[#FFFFFF] [background-position:0%_0%,0%_65%]">
+            class="jumbotron flex justify-start p-10 flex-col bg-gradient-to-b from-[#e6ebff] to-[#FFFFFF] [background-position:0%_0%,0%_65%]">
             <h1 class="text-2xl font-bold">Building Product Roadmaps With Confidence</h1>
             <div class="flex flex-row justify-between items-center">
                 <p>Pelajari cara menyusun roadmap produk yang jelas, terarah, dan meyakinkan untuk tim serta stakeholder
