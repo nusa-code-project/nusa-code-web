@@ -36,7 +36,7 @@ import { Button } from '@/components/ui/button'
             </div>
 
             <div class="relative flex w-[600px] h-[390px]">
-                <div class="absolute top-0 left-0 w-[300px] h-[80px] p-4
+                <div class="translate-y-[15px] absolute top-0 left-0 w-[300px] p-4
                   border border-[#E6EBFF] bg-white
                   shadow-[0_4px_4px_0_rgba(230,235,255,0.25)]
                   rounded-lg z-20">
@@ -45,8 +45,8 @@ import { Button } from '@/components/ui/button'
                     </p>
                 </div>
 
-                <img src="/Mascot.png" alt="Mascot" class="absolute inset-0 m-auto w-120
-                  translate-y-[60px] translate-x-[30px] z-10" />
+                <img src="/Mascot.png" alt="Mascot" class="absolute inset-0 m-auto w-95
+                  translate-y-[65px] translate-x-[30px] z-10" />
             </div>
         </div>
 
