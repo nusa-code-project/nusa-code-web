@@ -71,7 +71,8 @@ watch(
                 }" />
                 <img src="/Frame 1618869573.png" alt="">
             </div>
-            <div class="flex flex-col p-5 gap-5 rounded-xl shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] border-2 w-full">
+            <div
+                class="flex flex-col p-5 gap-5 rounded-xl shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] border-[#B0C0FF] border-2 w-full">
                 <h2 class="font-semibold text-xl mx-auto" style="max-width: 55ch;">Kamu buka website dan tampilannya
                     berantakan,
                     loading-nya
