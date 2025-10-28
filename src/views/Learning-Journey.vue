@@ -148,8 +148,7 @@ const cardRoadmaps = ref([
                     </Badge>
                 </div>
 
-                <p class="mt-2 text-[#454545] flex-1 min-h-0 break-words overflow-hidden"
-                    style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
+                <p class="mt-2 text-[#454545] flex-1 min-h-0 break-words overflow-hidden line-clamp-3">
                     {{ card.description }}
                 </p>
 

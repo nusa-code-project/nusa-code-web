@@ -37,13 +37,7 @@ const moduleAiRolePlay = ref([
     bg-no-repeat
     [--gH:65%] [background-size:100%_var(--gH)] [background-position:0_0]
     md:[--gH:50%]">
-        <h1 class="font-bold text-center mx-auto pt-10 text-2xl" style="
-            display:-webkit-box;
-            -webkit-box-orient:vertical;
-            -webkit-line-clamp:2;
-            overflow:hidden;
-            max-width:36ch; 
-        ">
+        <h1 class="font-bold text-center mx-auto pt-10 text-2xl line-clamp-2 max-w-[36ch]">
             <span class="inline-block bg-gradient-to-r from-[#002ee8] to-[#977dff] bg-clip-text text-transparent"
                 style="-webkit-text-fill-color: transparent;">
                 Belajar Lebih Efektif
@@ -64,13 +58,7 @@ const moduleAiRolePlay = ref([
     </section>
 
     <section class="melatih relative overflow-visible">
-        <h1 class="font-bold text-center mx-auto pt-10 text-2xl" style="
-      display:-webkit-box;
-      -webkit-box-orient:vertical;
-      -webkit-line-clamp:2;
-      overflow:hidden;
-      max-width:50ch;
-    ">
+        <h1 class="font-bold text-center mx-auto pt-10 text-2xl line-clamp-2 max-w-[50ch]">
             Latih Cara Kamu Berpikir, Bicara, dan Memimpin Bareng AI Role Play yang
             <span class="inline-block bg-gradient-to-r from-[#002ee8] to-[#977dff] bg-clip-text text-transparent"
                 style="-webkit-text-fill-color: transparent;">
