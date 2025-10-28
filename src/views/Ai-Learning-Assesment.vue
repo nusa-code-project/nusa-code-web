@@ -261,7 +261,7 @@ watch(
                 }" />
                 <img src="/Frame 1618869573.png" alt="">
             </div>
-            <div class="space-y-6 w-full">
+            <div class="w-full">
                 <div v-for="(q, qi) in questions" :key="q.id"
                     :class="['p-5 gap-5 rounded-xl shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] border-[#B0C0FF] border-2', qi + 1 === Number(question) ? 'flex flex-col' : 'hidden']">
                     <h2 class="font-semibold text-xl mx-auto text-center max-h-15"
