@@ -6,6 +6,12 @@ declare interface RegisterInput {
     provider: string
 }
 
+declare interface LoginInput {
+    email: string;
+    password: string;
+    provider: string;
+}
+
 declare interface ErrorRegister {
     email: string[],
     password: string[],
