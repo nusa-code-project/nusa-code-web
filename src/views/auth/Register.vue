@@ -17,12 +17,12 @@ import { Button } from '@/components/ui/button'
             style="background-image: url('/Ellipse 2.png')">
         </div>
 
-        <div class="flex justify-around w-full relative z-10">
-            <div class="flex flex-col items-center text-2xl mt-10">
-                <img src="/Frame 1618869416.png" class="mb-10" width="500" height="600" alt="" />
+        <div class="flex justify-around min-h-screen w-full relative z-10">
+            <div class="flex flex-col items-center self-center text-2xl">
+                <img src="/Frame 1618869416.png" width="500" height="600" alt="" />
             </div>
 
-            <Card class="w-150 flex justify-center z-10">
+            <Card class="w-150 flex self-center justify-center z-10">
                 <CardHeader>
                     <CardTitle class="text-center text-xl mt-10">Yuk, Daftar Jadi Nusaverse</CardTitle>
                 </CardHeader>
