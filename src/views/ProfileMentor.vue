@@ -134,13 +134,11 @@ const listCourses = [
                 <CardHeader class="ps-2 pe-2">
                     <img :src="card.image" class="w-full" alt="">
 
-                    <CardTitle class="text-[18px] overflow-hidden text-ellipsis min-h-[48px]"
-                        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                    <CardTitle class="text-[18px] overflow-hidden text-ellipsis min-h-[48px] line-clamp-2">
                         {{ card.title }}
                     </CardTitle>
 
-                    <CardDescription class="pe-2 text-[12px] overflow-hidden min-h-[36px]"
-                        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                    <CardDescription class="pe-2 text-[12px] overflow-hidden min-h-[36px] line-clamp-2">
                         {{ card.description }}
                     </CardDescription>
 

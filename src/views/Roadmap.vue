@@ -1,0 +1,335 @@
+<script setup lang="ts">
+</script>
+
+<template>
+    <section
+        class="pt-20 jumbotron flex flex-col items-center justify-start p-10 gap-10 bg-gradient-to-b from-[#e6ebff] to-[#FFFFFF] [background-position:0%_0%,0%_65%]">
+        <h1 class="font-bold text-center mx-auto pt-10 text-2xl" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:36ch; 
+        ">
+            Kuasai Skill Lebih Cepat dengan
+            <span class="inline-block bg-clip-text text-transparent" style="background: linear-gradient(270deg, #977dff 0%, #002ee8 100%);
+           -webkit-text-fill-color: transparent;
+           -webkit-background-clip: text;
+           background-clip: text;">
+                Roadmap Belajar
+            </span>
+            yang Ngebimbing Langkah Kamu
+        </h1>
+        <img src="/Jalur Belajar - Materi per tahapan 1.png" alt="">
+    </section>
+
+    <section class="kursus-favorite flex flex-col ps-10 pt-10 gap-5">
+        <div class="flex flex-row items-center gap-2">
+            <h2 class="inline-block bg-clip-text text-transparent font-bold text-2xl mx-auto" style="background: linear-gradient(270deg, #977dff 0%, #002ee8 100%);
+           -webkit-text-fill-color: transparent;
+           -webkit-background-clip: text;
+           background-clip: text;">
+                Web Development
+            </h2>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Front-End Developer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Front-End Developer, dari dasar
+                    hingga mahir
+                    membangun antarmuka pengguna yang interaktif.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Back-End Developer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Back-End Developer, dari dasar
+                    hingga mahir
+                    membangun antarmuka pengguna yang interaktif.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Full-Stack Developer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Full-Stack Developer, dari fondasi dasar hingga mahir
+                    mengelola seluruh sisi pengembangan web.</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">DevOps Engineer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi DevOps Engineer, dari dasar hingga mahir mengotomatiskan
+                    proses deployment.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">QA (Quality Assurance)</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi QA Engineer, dari dasar testing hingga ahli dalam menjaga
+                    kualitas perangkat lunak.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Web Maintenance</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Web Maintenance, dari dasar hingga ahli dalam memelihara
+                    performa dan keamanan website.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobile-dev flex flex-col ps-10 pt-10 gap-5">
+        <div class="flex flex-row items-center gap-2">
+            <h2 class="inline-block bg-clip-text text-transparent font-bold text-2xl mx-auto" style="background: linear-gradient(270deg, #977dff 0%, #002ee8 100%);
+           -webkit-text-fill-color: transparent;
+           -webkit-background-clip: text;
+           background-clip: text;">
+                Mobile Development
+            </h2>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Mobile App Developer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Mobile App Developer, dari dasar hingga mahir membuat
+                    aplikasi mobile profesional.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Cross-Platform Developer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Cross-Platform Developer, dari dasar hingga mahir membuat
+                    aplikasi mobile lintas platform.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Mobile Back-End</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Mobile Back-End Developer, dari dasar hingga mahir
+                    mengelola sistem untuk aplikasi mobile.</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Mobile Deployment Engineer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Mobile Deployment Engineer, dari dasar hingga mahir
+                    mengelola deployment aplikasi mobile.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">QA Mobile</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi QA Mobile, dari dasar testing hingga ahli menjaga kualitas
+                    aplikasi mobile.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Mobile Maintenance</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini menjelaskan tahapan belajar menjadi Mobile Maintenance, dari dasar hingga ahli dalam menjaga
+                    performa dan keamanan aplikasi mobile.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-ui-ux flex flex-col ps-10 pt-10 gap-5">
+        <div class="flex flex-row items-center gap-2">
+            <h2 class="inline-block bg-clip-text text-transparent font-bold text-2xl mx-auto" style="background: linear-gradient(270deg, #977dff 0%, #002ee8 100%);
+           -webkit-text-fill-color: transparent;
+           -webkit-background-clip: text;
+           background-clip: text;">
+                Product & UX
+            </h2>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Product Manager</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi Product Manager, dari memahami kebutuhan pengguna hingga memimpin
+                    strategi produk</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">UX Research</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi UX Researcher, dari metode riset dasar hingga menghasilkan insight
+                    untuk produk.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">UI Design</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi UI Designer, dari dasar desain visual hingga menciptakan antarmuka
+                    menarik dan konsisten.</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">UI/UX Designer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi UI/UX Designer, dari dasar UX dan UI hingga menciptakan produk digital
+                    efektif dan menarik</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Product Designer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi Product Designer, dari konsep produk hingga menyatukan UX, UI, dan
+                    strategi bisnis.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">UX Designer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi UX Designer, dari memahami pengguna hingga merancang pengalaman yang
+                    intuitif.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-ui-ux flex flex-col ps-10 pt-10 gap-5">
+        <div class="flex flex-row items-center gap-2">
+            <h2 class="inline-block bg-clip-text text-transparent font-bold text-2xl mx-auto" style="background: linear-gradient(270deg, #977dff 0%, #002ee8 100%);
+           -webkit-text-fill-color: transparent;
+           -webkit-background-clip: text;
+           background-clip: text;">
+                Data & AI
+            </h2>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Data Analyst</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi Data Analyst, dari dasar pengolahan data hingga mahir menyajikan
+                    insight bisnis.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Data Scientist</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi Data Scientist, dari analisis data dasar hingga membangun model
+                    prediktif kompleks.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Data Engineer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi Data Engineer, dari dasar hingga membangun pipeline dan infrastruktur
+                    skala besar.</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Machine Learning Engineer</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi Machine Learning Engineer, dari algoritma dasar hingga mengembangkan
+                    dan menerapkan model AI/ML.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">AI Researcher</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi AI Researcher, dari teori dasar hingga meneliti dan menciptakan
+                    inovasi berbasis AI.</p>
+            </div>
+            <div
+                class="border-3 border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] p-3 rounded-lg flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Business Intelligence</h3>
+                <p class="text-sm" style="
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            max-width:40ch; 
+        ">Peta jalan ini memandu belajar menjadi BI, dari pengolahan data hingga menyajikan insight melalui dashboard
+                    dan visualisasi.</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+</template>
