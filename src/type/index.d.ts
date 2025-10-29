@@ -33,3 +33,12 @@ declare interface ErrorResponse {
         [field: string]: string[];
     };
 }
+
+declare interface AnswerAssesment {
+    [key: string]: string
+}
+
+declare interface Roadmap {
+    title: string
+    description: string
+}
