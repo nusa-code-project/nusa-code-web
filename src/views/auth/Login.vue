@@ -13,7 +13,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { reactive, ref } from 'vue'
 import { useMutation } from '@tanstack/vue-query'
 import { AxiosError } from 'axios'
-import { authService } from '@/services/authService'
+import { authService } from '@/services/auth'
 import { toast } from 'vue-sonner'
 import { useRouter } from 'vue-router'
 import { useCookies } from '@/composables/useCookies'
