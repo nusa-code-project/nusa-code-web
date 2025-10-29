@@ -134,7 +134,7 @@ const handleClick = async (roadmapName: string) => {
                 Berikut adalah 3 rekomendasi jalur belajar yang paling efektif untuk kamu
             </h1>
             <div class="flex flex-row gap-8 justify-center">
-                <div @click="handleClick(rec.title)" v-for="(rec, idx) in decorated" :key="idx" class="border border-[#b0c0ff] rounded-xl p-3 w-[400px] flex flex-col items-center
+                <div @click="handleClick(rec.title)" v-for="(rec, idx) in decorated" :key="idx" class="cursor-pointer border border-[#b0c0ff] rounded-xl p-3 w-[400px] flex flex-col items-center
          bg-[linear-gradient(to_bottom,white_0%,white_50%,#f5f2ff_100%)]">
                     <h2 class="text-xl font-semibold text-center">{{ rec.title }}</h2>
                     <Separator class="my-5 border-5 !w-[96px] mx-auto rounded-sm border-[#5476ff]" />
