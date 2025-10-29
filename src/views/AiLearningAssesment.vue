@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { useRoute, useRouter } from 'vue-router'
 import { onMounted, watch, computed, ref } from 'vue'
+import { AIService } from '@/services/ai'
 
 type OptionText = string
 
@@ -193,6 +194,40 @@ const selected = ref<SelectedIndex[]>(
 function selectAnswer(qIndex: number, optionIndex: number): void {
     selected.value[qIndex] = optionIndex
 }
+
+const allAnswered = computed(() => selected.value.every((v) => v !== null))
+
+const buildAnswerMap = (): Record<string, string> => {
+    return selected.value.reduce((acc, val, idx) => {
+        acc[`Q${idx + 1}`] = abc(val as number)
+        return acc
+    }, {} as Record<string, string>)
+}
+
+function goWithQuery(items: { path: string; prob: string }[]) {
+    const params = new URLSearchParams()
+    for (const it of items) {
+        params.append('path[]', it.path)
+        params.append('prob[]', it.prob)
+    }
+    router.push(`/ai-learning-path-result?${params.toString()}`)
+}
+
+watch(
+    selected,
+    () => {
+        if (allAnswered.value) {
+            const finalAnswers = buildAnswerMap()
+            AIService.AIAssesmentApi(finalAnswers).then((res) => {
+                if (res.response.status === 201) {
+                    const data = res.data.data
+                    goWithQuery(data)
+                }
+            })
+        }
+    },
+    { deep: true }
+)
 
 const route = useRoute()
 const router = useRouter()
