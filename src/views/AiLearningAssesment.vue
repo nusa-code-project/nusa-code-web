@@ -4,14 +4,9 @@ import { Separator } from '@/components/ui/separator'
 import { useRoute, useRouter } from 'vue-router'
 import { onMounted, watch, computed, ref } from 'vue'
 import { AIService } from '@/services/ai'
+import { useCookies } from '@/composables/useCookies'
 
-type OptionText = string
-
-interface Question {
-    id: number
-    text: string
-    options: OptionText[]
-}
+const cookies = useCookies()
 
 const abc = (idx: number): string => String.fromCharCode(97 + idx)
 
@@ -186,7 +181,6 @@ const makeQuestions = (): Question[] =>
 
 const questions = ref<Question[]>(makeQuestions())
 
-type SelectedIndex = number | null
 const selected = ref<SelectedIndex[]>(
     Array.from({ length: questions.value.length }, () => null)
 )
@@ -204,13 +198,8 @@ const buildAnswerMap = (): Record<string, string> => {
     }, {} as Record<string, string>)
 }
 
-function goWithQuery(items: { path: string; prob: string }[]) {
-    const params = new URLSearchParams()
-    for (const it of items) {
-        params.append('path[]', it.path)
-        params.append('prob[]', it.prob)
-    }
-    router.push(`/ai-learning-path-result?${params.toString()}`)
+function goResult() {
+    router.push(`/ai-learning-path-result`)
 }
 
 watch(
@@ -218,10 +207,9 @@ watch(
     () => {
         if (allAnswered.value) {
             const finalAnswers = buildAnswerMap()
-            AIService.AIAssesmentApi(finalAnswers).then((res) => {
+            AIService.AIAssesmentApi(finalAnswers, cookies.get('accessToken')).then((res) => {
                 if (res.response.status === 201) {
-                    const data = res.data.data
-                    goWithQuery(data)
+                    goResult()
                 }
             })
         }

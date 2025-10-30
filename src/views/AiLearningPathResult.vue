@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import { Separator } from '@/components/ui/separator'
-import { useRoute } from 'vue-router'
-import { computed, ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, watch } from 'vue'
 import {
     Dialog,
     DialogContent,
     DialogOverlay,
 } from '@/components/ui/dialog'
 import { roadmapService } from '@/services/roadmap'
+import { axiosInstance } from '@/lib/axios'
+import { useQuery } from '@tanstack/vue-query'
+import { useCookies } from '@/composables/useCookies'
+
+const cookies = useCookies()
 
 const bestRoadmap = ref<Roadmap[]>([])
 const loading = ref(false)
@@ -27,76 +31,36 @@ onBeforeUnmount(() => {
     if (timer) clearTimeout(timer)
 })
 
-const route = useRoute()
+const minatResult = ref<Item[]>([])
 
-type QueryVal = string | string[] | null | undefined
-const asArr = (v: QueryVal): string[] => (v == null ? [] : Array.isArray(v) ? v : [v])
-
-interface Item {
-    title: string
-    score: string | null
-}
-
-interface DecoratedItem extends Item {
-    image?: string
-}
-
-const items = computed<Item[]>(() => {
-    const paths = asArr((route.query['path[]'] ?? route.query.path) as QueryVal)
-    const probs = asArr((route.query['prob[]'] ?? route.query.prob) as QueryVal)
-
-    return paths.map((p, i) => ({
-        title: p,
-        score: probs[i] ?? null,
-    }))
+const { data, isSuccess } = useQuery({
+    queryKey: ['userMe'],
+    queryFn: async () => {
+        const accessToken = cookies.get('accessToken')
+        const res = await axiosInstance.get('/user/@me', {
+            headers: { Authorization: `Bearer ${accessToken}` },
+        })
+        return res.data
+    },
+    enabled: !!cookies.get('accessToken'),
 })
 
-const toNum = (s: string | null): number => {
-    if (!s) return -Infinity
-    const n = Number.parseFloat(s.replace('%', ''))
-    return Number.isNaN(n) ? -Infinity : n
-}
+watch([isSuccess, data], async () => {
+    if (!isSuccess.value || !data.value?.minat?.length) return
 
-const decorated = computed<DecoratedItem[]>(() => {
-    const base = items.value as Item[]
-    if (base.length === 0) return []
+    minatResult.value = data.value.minat
 
-    const scored = base
-        .map((it, idx) => ({ ...it, _n: toNum(it.score), _idx: idx }))
-        .sort((a, b) => (b._n - a._n) || (a._idx - b._idx))
-
-    const imageByIdx = new Map<number, string>()
-
-    const first = scored[0]
-    if (first !== undefined) {
-        imageByIdx.set(first._idx, '/Mascot (1).png')
-    }
-
-    if (scored.length >= 3) {
-        const midIdx = Math.floor(scored.length / 2)
-        const mid = scored[midIdx]
-        if (mid !== undefined) {
-            imageByIdx.set(mid._idx, '/Mascot (2).png')
-        }
-    }
-
-    const last = scored[scored.length - 1]
-    if (last !== undefined) {
-        imageByIdx.set(last._idx, '/Mascot (3).png')
-    }
-
-    return base.map((it, idx) => ({
-        ...it,
-        image: imageByIdx.get(idx)
-    }))
-})
-
-onMounted(async () => {
     loading.value = true
-    const { data } = await roadmapService.getRoadmapCompactApi(decorated.value[0]?.title ?? '')
-    bestRoadmap.value = data.data
-    loading.value = false
-})
+    try {
+        const path = minatResult.value[0]?.path ?? ""
+        const resp = await roadmapService.getRoadmapCompactApi(path)
+
+        bestRoadmap.value = resp.data?.data ?? []
+    } finally {
+        loading.value = false
+    }
+}, { immediate: true })
+
 
 const handleClick = async (roadmapName: string) => {
     if (buttonDisable.value) return;
@@ -134,13 +98,13 @@ const handleClick = async (roadmapName: string) => {
                 Berikut adalah 3 rekomendasi jalur belajar yang paling efektif untuk kamu
             </h1>
             <div class="flex flex-row gap-8 justify-center">
-                <div @click="handleClick(rec.title)" v-for="(rec, idx) in decorated" :key="idx" class="cursor-pointer border border-[#b0c0ff] rounded-xl p-3 w-[400px] flex flex-col items-center
+                <div @click="handleClick(rec.path)" v-for="(rec, idx) in minatResult" :key="idx" class="cursor-pointer border border-[#b0c0ff] rounded-xl p-3 w-[400px] flex flex-col items-center
          bg-[linear-gradient(to_bottom,white_0%,white_50%,#f5f2ff_100%)]">
-                    <h2 class="text-xl font-semibold text-center">{{ rec.title }}</h2>
+                    <h2 class="text-xl font-semibold text-center">{{ rec.path }}</h2>
                     <Separator class="my-5 border-5 !w-[96px] mx-auto rounded-sm border-[#5476ff]" />
                     <img :src="rec.image" alt="" class="mx-auto block" />
                     <p class="text-center text-[20px] mt-3">Kecocokan hasil dengan profil kamu</p>
-                    <h3 class="text-center text-2xl font-semibold mt-3">{{ rec.score }}</h3>
+                    <h3 class="text-center text-2xl font-semibold mt-3">{{ rec.prob }}</h3>
                 </div>
             </div>
         </div>
