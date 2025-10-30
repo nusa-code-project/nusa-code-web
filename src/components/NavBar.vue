@@ -22,7 +22,7 @@
             <img src="/Logo.png" width="150" class="ps-8" alt="logo">
         </div>
         <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+            <ul class="flex flex-row gap-5 px-1">
                 <li><a class="hover:bg-transparent hover:text-current" href="/ai-learning-hub">AI Learning Hub</a></li>
                 <li><a class="hover:bg-transparent hover:text-current" href="/">Home</a></li>
                 <li><a class="hover:bg-transparent hover:text-current" href="/roadmap-belajar">Roadmap Belajar</a></li>
