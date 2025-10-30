@@ -42,3 +42,19 @@ declare interface Roadmap {
     title: string
     description: string
 }
+
+declare interface Item {
+    path: string
+    prob: string
+    image: string
+}
+
+declare interface Question {
+    id: number
+    text: string
+    options: OptionText[]
+}
+
+declare type OptionText = string
+
+declare type SelectedIndex = number | null
