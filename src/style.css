@@ -123,3 +123,35 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("/src/assets/fonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
+
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("/src/assets/fonts/SFPRODISPLAYMEDIUM.OTF") format("opentype");
+
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("/src/assets/fonts/SFPRODISPLAYBOLD.OTF") format("opentype");
+
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "SF Pro", ui-sans-serif, system-ui, sans-serif;
+  /* set default */
+}
