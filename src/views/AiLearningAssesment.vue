@@ -288,7 +288,7 @@ watch(
                 <div v-for="(q, qi) in questions" :key="q.id"
                     :class="['p-5 gap-5 rounded-xl shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] border-[#B0C0FF] border-2', qi + 1 === Number(question) ? 'flex flex-col' : 'hidden']">
                     <h2 class="font-semibold text-xl mx-auto text-center max-h-15 line-clamp-2 max-w-[60ch]">
-                        {{ qi + 1 }}. {{ q.text }}
+                        {{ q.text }}
                     </h2>
 
                     <div v-for="(opt, oi) in q.options" :key="oi" class="border cursor-pointer p-3 rounded-md" :class="[
