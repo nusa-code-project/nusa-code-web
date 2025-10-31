@@ -177,7 +177,7 @@ const listCourseRecomendation = [
 
 <template>
     <section
-        class="pt-20 jumbotron flex flex-col items-center justify-start p-10 gap-10 bg-gradient-to-b from-[#e6ebff] to-[#FFFFFF] [background-position:0%_0%,0%_65%]">
+        class="pt-30 jumbotron flex flex-col items-center justify-start p-10 gap-10 bg-gradient-to-b from-[#e6ebff] to-[#FFFFFF] [background-position:0%_0%,0%_65%]">
         <h1 class="font-bold text-center mx-auto pt-10 text-[35px] line-clamp-2 max-w-[36ch]">
             Bingung Mau ke Mana? Tentukan Jalur IT Kamu & Jadi
             <span class="inline-block bg-clip-text text-transparent" style="
