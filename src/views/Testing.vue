@@ -1,87 +1,85 @@
-<script setup lang="ts">
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
-import { io, Socket } from 'socket.io-client';
-
-interface ServerToClientEvents {
-    system: (p: { message: string }) => void;
-    ai_delta: (p: { delta: string }) => void;
-    ai_message_done: (p: { text: string }) => void;
-    session_ended: (p: { reason: string; score: string }) => void;
-    error: (p: { message: string }) => void;
-}
-interface ClientToServerEvents {
-    user_message: (p: { text: string }) => void;
-}
-
-// optional: ganti dengan import.meta.env.VITE_SOCKET_URL saat dev
-const URL = import.meta.env.PROD ? undefined : 'http://localhost:3000';
-
-const socket: Socket<ServerToClientEvents, ClientToServerEvents> = io(URL);
-
-const log = ref<string[]>([]);
-const assembling = ref('');
-const msg = ref('');
-
-const push = (t: string) => log.value.push(t);
-
-onMounted(() => {
-    // HMR guard: pastikan tidak dobel listener saat hot reload
-    socket.off();
-
-    socket.on('system', (p) => push(`🔔 ${p.message}`));
-    socket.on('ai_delta', (p) => (assembling.value += p.delta));
-    socket.on('ai_message_done', (p) => {
-        push(`🤖 ${p.text}`);
-        assembling.value = '';
-    });
-    socket.on('session_ended', (p) => push(`📊 Sesi berakhir (${p.reason}).\n${p.score}`));
-    socket.on('error', (p) => push(`⚠️ ${p.message}`));
-    socket.on('connect_error', (err) => push(`⚠️ ${err.message}`));
-});
-
-onBeforeUnmount(() => {
-    socket.removeAllListeners();
-    socket.close();
-});
-
-const joinedLog = computed(() => log.value.join('\n'));
-
-function submit() {
-    const text = msg.value.trim();
-    if (!text) return;
-    push(`🧑 ${text}`);
-    socket.emit('user_message', { text });
-    msg.value = '';
-}
-</script>
-
+<!-- App.vue -->
 <template>
-    <div class="wrap">
-        <div class="log" role="log" aria-live="polite">
-            <pre>{{ joinedLog }}</pre>
+    <div>
+        <header>
+            <h1>Roleplay Chat</h1>
+            <div>{{ isConnected ? "Online" : "Offline" }}</div>
+        </header>
+
+        <div>
+            <div v-for="(m, i) in messages" :key="i">
+                <strong>{{ m.role === 'ai' ? 'AI' : m.role === 'system' ? 'System' : 'You' }}:</strong>
+                <span> {{ m.text }} </span>
+            </div>
         </div>
-        <form @submit.prevent="submit">
-            <input v-model="msg" placeholder="Ketik jawaban..." style="width:80%" />
-            <button>Kirim</button>
+
+        <form ref="formEl" @submit.prevent="send">
+            <input name="text" placeholder="Tulis pesan..." autocomplete="off" />
+            <button :disabled="!isConnected">Kirim</button>
         </form>
-        <details v-if="assembling">
-            <summary>Sedang menyusun token…</summary>
-            <pre>{{ assembling }}</pre>
-        </details>
     </div>
 </template>
 
-<style scoped>
-.wrap {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    max-width: 720px;
-    margin: 24px auto;
+<script setup>
+import { onMounted, onBeforeUnmount, ref } from "vue";
+import { io } from "socket.io-client"; // client resmi Socket.IO v4 :contentReference[oaicite:0]{index=0}
+
+const socket = io("http://localhost:5000", {
+    path: "/socket.io",
+    transports: ["websocket"],
+    autoConnect: true,
+    reconnection: true,
+    reconnectionAttempts: Infinity,
+    reconnectionDelay: 1000,
+});
+
+const isConnected = ref(false);
+const messages = ref([]);
+const formEl = ref(null); // template ref untuk akses <form> / <input> :contentReference[oaicite:1]{index=1}
+
+function add(role, text) {
+    messages.value.push({ role, text });
 }
 
-.log {
-    white-space: pre-wrap;
-    border: 1px solid #ddd;
-    padding: 12px;
-    min-height: 200px;
+function send(e) {
+    // Ambil nilai dari <form> tanpa v-model
+    const fd = new FormData(e.target);
+    const text = (fd.get("text") || "").toString().trim();
+    if (!text) return;
+
+    add("user", text);
+    // Emit ke server sesuai kontrak: { text }
+    socket.emit("user_message", { text }); // dukungan ack tersedia jika perlu: emit(..., (ack) => {}) :contentReference[oaicite:2]{index=2}
+
+    // reset field input & fokuskan lagi
+    e.target.reset();
+    // fokuskan input pertama di form (opsional)
+    const firstInput = e.target.querySelector("input[name='text']");
+    firstInput && firstInput.focus();
 }
-</style>
+
+onMounted(() => {
+    socket.on("connect", () => { isConnected.value = true; });
+    socket.on("disconnect", () => { isConnected.value = false; });
+
+    socket.on("system", (payload) => { if (payload?.message) add("system", payload.message); });
+    socket.on("ai_message_done", (payload) => { if (payload?.text) add("ai", payload.text); });
+    socket.on("session_ended", (payload) => {
+        console.log(payload)
+        const reason = payload?.reason ?? "ended";
+        const score = payload?.score ? ` | score: ${payload.score}` : "";
+        add("system", `Sesi berakhir (${reason})${score}`);
+        console.log(score)
+    });
+    socket.on("error", (payload) => { add("system", `Error: ${payload?.message ?? "unknown error"}`); });
+});
+
+onBeforeUnmount(() => {
+    socket.off("connect");
+    socket.off("disconnect");
+    socket.off("system");
+    socket.off("ai_message_done");
+    socket.off("session_ended");
+    socket.off("error");
+});
+</script>
