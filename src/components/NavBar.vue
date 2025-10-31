@@ -16,7 +16,7 @@
                     class="menu menu-sm dropdown-content bg-white text-black rounded-box z-1 mt-3 w-52 p-2 shadow">
                     <li><a href="/ai-learning-hub">AI Learning Hub</a></li>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/roadmap-belajar">Roadmap Belajar</a></li>
+                    <li><a href="/roadmap">Roadmap Belajar</a></li>
                 </ul>
             </div>
             <img src="/Logo.png" width="250" height="250" class="ps-8" alt="logo">
@@ -25,7 +25,7 @@
             <ul class="flex flex-row gap-12 px-1 text-[20px]">
                 <li><a class="hover:bg-transparent hover:text-current" href="/ai-learning-hub">AI Learning Hub</a></li>
                 <li><a class="hover:bg-transparent hover:text-current" href="/">Home</a></li>
-                <li><a class="hover:bg-transparent hover:text-current" href="/roadmap-belajar">Roadmap Belajar</a></li>
+                <li><a class="hover:bg-transparent hover:text-current" href="/roadmap">Roadmap Belajar</a></li>
             </ul>
         </div>
         <div class="navbar-end gap-2 pe-8">
