@@ -3,7 +3,7 @@
 
 <template>
     <section
-        class="pt-20 jumbotron flex flex-col items-center justify-start p-10 gap-10 bg-gradient-to-b from-[#e6ebff] to-[#FFFFFF] [background-position:0%_0%,0%_65%]">
+        class="pt-30 jumbotron flex flex-col items-center justify-start p-10 gap-10 bg-gradient-to-b from-[#e6ebff] to-[#FFFFFF] [background-position:0%_0%,0%_65%]">
         <h1 class="font-bold text-center mx-auto pt-10 text-2xl" style="
             display:-webkit-box;
             -webkit-box-orient:vertical;
