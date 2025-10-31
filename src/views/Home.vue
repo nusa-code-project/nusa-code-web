@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const goCourseContent = () => {
+    router.push('/course-content')
+}
 
 const mentors = ref([
     {
@@ -135,6 +142,7 @@ const listCourseRecomendation = [
         author: "Marcus Aurelius",
         rating: 5.0,
         price: "Rp399.999",
+        onClick: goCourseContent
     },
     {
         image: "/Rectangle 39 (4).png",
@@ -144,6 +152,7 @@ const listCourseRecomendation = [
         author: "Jonathan Christy",
         rating: 5.0,
         price: "Rp399.999",
+        onClick: goCourseContent
     },
     {
         image: "/Rectangle 39 5.png",
@@ -153,6 +162,7 @@ const listCourseRecomendation = [
         author: "Muhammad Aryo",
         rating: 5.0,
         price: "Rp399.999",
+        onClick: goCourseContent
     },
     {
         image: "/Rectangle 39 6.png",
@@ -162,6 +172,7 @@ const listCourseRecomendation = [
         author: "Ryan Gosling",
         rating: 5.0,
         price: "Rp399.999",
+        onClick: goCourseContent
     },
     {
         image: "/Rectangle 39 (2) (copy).png",
@@ -171,6 +182,7 @@ const listCourseRecomendation = [
         author: "Alexander Joe",
         rating: 5.0,
         price: "Rp399.999",
+        onClick: goCourseContent
     },
 ]
 </script>
@@ -202,7 +214,8 @@ const listCourseRecomendation = [
                     class="border border-[#E6EBFF] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] w-90 p-3 rounded-xl flex flex-col gap-3">
                     <img :src="card.image" alt="" class="rounded-lg object-cover h-60 w-full" />
 
-                    <h1 class="text-2xl font-semibold mt-3 min-h-[60px] line-clamp-2 mb-1">
+                    <h1 class="text-2xl font-semibold mt-3 min-h-[60px] line-clamp-2 mb-1 cursor-pointer"
+                        @click="card.onClick">
                         {{ card.title }}
                     </h1>
 
