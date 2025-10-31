@@ -44,7 +44,7 @@ const modules = [
 </script>
 
 <template>
-    <section class="jumbotron pt-40 flex flex-col gap-5">
+    <section class="jumbotron pt-30 flex flex-col gap-5">
         <h1 class="text-[30px] text-center font-bold">Roadmap Belajar Menjadi Product Manager</h1>
         <Separator class="py-1 !w-25 mx-auto rounded-md bg-[#5476ff]" />
         <p class="font-semibold text-center text-[20px]">End of Learning</p>

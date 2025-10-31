@@ -58,7 +58,7 @@ const skills = [
 </script>
 
 <template>
-    <div v-if="buy" class="flex min-h-screen pt-40">
+    <div v-if="buy" class="flex min-h-screen pt-30">
         <div class="w-1/2 pe-8 ps-8 pb-8 overflow-y-auto max-h-screen hide-scrollbar">
             <img src="/Rectangle 268.png" alt="Roadmap" class="w-full h-auto rounded-lg mb-6">
             <h1 class="text-[35.3px] font-bold mb-4">Building Product Roadmaps With Confidence</h1>

@@ -44,7 +44,7 @@ const moduleAiRolePlay = ref([
 </script>
 
 <template>
-    <section class="pt-40 jumbotron flex flex-col items-center justify-start p-10 gap-10 bg-white
+    <section class="pt-30 jumbotron flex flex-col items-center justify-start p-10 gap-10 bg-white
     bg-gradient-to-b from-[#e6ebff] to-transparent
     bg-no-repeat
     [--gH:65%] [background-size:100%_var(--gH)] [background-position:0_0]
