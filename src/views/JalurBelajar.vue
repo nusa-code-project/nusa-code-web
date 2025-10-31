@@ -36,6 +36,8 @@ import Separator from '@/components/ui/separator/Separator.vue';
                 </div>
             </div>
         </div>
+        <br>
+        <img src="/Frame 1618869672.png" class="w-[90%] mx-auto" alt="">
     </section>
 </template>
 
