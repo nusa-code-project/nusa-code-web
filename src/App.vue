@@ -6,7 +6,7 @@ import { Toaster } from '@/components/ui/sonner'
 import 'vue-sonner/style.css'
 
 const route = useRoute()
-const showNavbar = computed(() => !['/login', '/register'].includes(route.path))
+const showNavbar = computed(() => !['/login', '/register', '/testing'].includes(route.path))
 </script>
 
 <template>

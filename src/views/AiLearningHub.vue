@@ -2,6 +2,12 @@
 import { Button } from '@/components/ui/button'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger
+} from '@/components/ui/tooltip'
 
 const router = useRouter()
 
@@ -101,9 +107,18 @@ const moduleAiRolePlay = ref([
                 class="border border-[#E6EBFF] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] w-90 p-3 rounded-xl flex flex-col">
                 <img :src="card.thumbnail" alt="" class="rounded-lg w-full object-cover h-50" />
 
-                <h1 class="text-2xl font-semibold mt-3 min-h-[60px] line-clamp-2 mb-1">
-                    {{ card.title }}
-                </h1>
+                <TooltipProvider>
+                    <Tooltip>
+                        <TooltipTrigger as="span" class="m-0 p-0 inline leading-none">
+                            <h1 class="text-2xl font-semibold mt-3 min-h-[60px] line-clamp-2 mb-1">
+                                {{ card.title }}
+                            </h1>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                            <p>{{ card.title }}</p>
+                        </TooltipContent>
+                    </Tooltip>
+                </TooltipProvider>
 
                 <div class="flex mt-2 items-center gap-2">
                     <img src="/fi-br-time-fast.png" alt="">
@@ -140,9 +155,18 @@ const moduleAiRolePlay = ref([
                 class="border border-[#E6EBFF] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] w-90 p-3 rounded-xl flex flex-col">
                 <img :src="card.thumbnail" alt="" class="rounded-lg w-full object-cover h-50" />
 
-                <h1 class="text-2xl font-semibold mt-3 min-h-[60px] line-clamp-2 mb-1">
-                    {{ card.title }}
-                </h1>
+                <TooltipProvider>
+                    <Tooltip>
+                        <TooltipTrigger as="span" class="m-0 p-0 inline leading-none">
+                            <h1 class="text-2xl font-semibold mt-3 min-h-[60px] line-clamp-2 mb-1">
+                                {{ card.title }}
+                            </h1>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                            <p>{{ card.title }}</p>
+                        </TooltipContent>
+                    </Tooltip>
+                </TooltipProvider>
 
                 <div class="flex mt-2 items-center gap-2">
                     <img src="/fi-br-time-fast.png" alt="">
@@ -179,9 +203,18 @@ const moduleAiRolePlay = ref([
                 class="border border-[#E6EBFF] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] w-90 p-3 rounded-xl flex flex-col">
                 <img :src="card.thumbnail" alt="" class="rounded-lg w-full object-cover h-50" />
 
-                <h1 class="text-2xl font-semibold mt-3 min-h-[60px] line-clamp-2 mb-1">
-                    {{ card.title }}
-                </h1>
+                <TooltipProvider>
+                    <Tooltip>
+                        <TooltipTrigger as="span" class="m-0 p-0 inline leading-none">
+                            <h1 class="text-2xl font-semibold mt-3 min-h-[60px] line-clamp-2 mb-1">
+                                {{ card.title }}
+                            </h1>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                            <p>{{ card.title }}</p>
+                        </TooltipContent>
+                    </Tooltip>
+                </TooltipProvider>
 
                 <div class="flex mt-2 items-center gap-2">
                     <img src="/fi-br-time-fast.png" alt="">
@@ -207,4 +240,5 @@ const moduleAiRolePlay = ref([
             </div>
         </div>
     </section>
+    <br>
 </template>

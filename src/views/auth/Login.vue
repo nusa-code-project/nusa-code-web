@@ -17,6 +17,7 @@ import { authService } from '@/services/auth'
 import { toast } from 'vue-sonner'
 import { useRouter } from 'vue-router'
 import { useCookies } from '@/composables/useCookies'
+import { Spinner } from '@/components/ui/spinner'
 
 const cookies = useCookies()
 
@@ -82,8 +83,8 @@ const onSubmit = () => {
 
             <Card class="w-150 flex self-center justify-center z-10">
                 <CardHeader>
-                    <CardTitle class="text-center text-xl mt-10">Selamat Datang Kembali, </CardTitle>
-                    <CardTitle class="text-center text-xl">Yuk Lanjut Belajar!</CardTitle>
+                    <CardTitle class="text-center text-[30px] !font-bold mt-10">Selamat Datang Kembali, </CardTitle>
+                    <CardTitle class="text-center text-[30px] !font-bold">Yuk Lanjut Belajar!</CardTitle>
                 </CardHeader>
 
                 <CardContent>
@@ -122,7 +123,7 @@ const onSubmit = () => {
 
                     <img src="/Frame 1618869405.png" class="w-full" alt="Divider" />
 
-                    <div class="flex flex-row justify-between w-full gap-10">
+                    <div class="flex flex-row justify-between w-full gap-5">
                         <div
                             class="border flex flex-row items-center h-12 pe-2 ps-2 rounded-md w-1/2 cursor-pointer justify-center">
                             <img src="/flat-color-icons_google.png" alt="Google" />
