@@ -17,6 +17,7 @@ import { authService } from '@/services/auth'
 import { toast } from 'vue-sonner'
 import { useRouter } from 'vue-router'
 import { useCookies } from '@/composables/useCookies'
+import { Spinner } from '@/components/ui/spinner'
 
 const cookies = useCookies()
 
