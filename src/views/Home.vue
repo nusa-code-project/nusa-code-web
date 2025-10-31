@@ -129,7 +129,7 @@ const listCourseRecomendation = [
         image: "/Rectangle 39 (4).png",
         title: "Product Management 101: From Idea to Launch",
         description: "Pelajari dasar-dasar product management dan kuasai langkah penting dari seorang ahli...",
-        avatar: "/Ellipse 20.png",
+        avatar: "/Ellipse 20 (3).png",
         author: "Jonathan Christy",
         rating: 5.0,
         price: "Rp399.999",
