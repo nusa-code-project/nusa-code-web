@@ -12,6 +12,7 @@ import Home from './views/Home.vue'
 import AiLearningHub from './views/AiLearningHub.vue'
 import Roadmap from './views/Roadmap.vue'
 import AiLearningAssesment from './views/AiLearningAssesment.vue'
+import AiRolePlayChat from './views/AiRolePlayChat.vue'
 
 const routes = [
     { path: '/register', component: Register },
@@ -27,6 +28,7 @@ const routes = [
     { path: '/ai-learning-hub', component: AiLearningHub },
     { path: '/roadmap', component: Roadmap },
     { path: '/ai-learning-assesment', component: AiLearningAssesment },
+    { path: '/ai-role-play-chat', component: AiRolePlayChat },
 ]
 
 const router = createRouter({

@@ -14,18 +14,18 @@
                 </div>
                 <ul tabindex="0"
                     class="menu menu-sm dropdown-content bg-white text-black rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li><a>AI Learning Hub</a></li>
-                    <li><a>Home</a></li>
-                    <li><a>Roadmap Belajar</a></li>
+                    <li><a href="/ai-learning-hub">AI Learning Hub</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/roadmap-belajar">Roadmap Belajar</a></li>
                 </ul>
             </div>
             <img src="/Logo.png" width="150" class="ps-8" alt="logo">
         </div>
         <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a class="hover:bg-transparent hover:text-current">AI Learning Hub</a></li>
-                <li><a class="hover:bg-transparent hover:text-current">Home</a></li>
-                <li><a class="hover:bg-transparent hover:text-current">Roadmap Belajar</a></li>
+            <ul class="flex flex-row gap-5 px-1">
+                <li><a class="hover:bg-transparent hover:text-current" href="/ai-learning-hub">AI Learning Hub</a></li>
+                <li><a class="hover:bg-transparent hover:text-current" href="/">Home</a></li>
+                <li><a class="hover:bg-transparent hover:text-current" href="/roadmap-belajar">Roadmap Belajar</a></li>
             </ul>
         </div>
         <div class="navbar-end gap-2 pe-8">
