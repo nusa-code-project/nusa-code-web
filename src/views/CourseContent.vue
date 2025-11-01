@@ -19,6 +19,10 @@ const allowedCategories = ['section', 'project']
 
 const category = computed(() => (route.query.category as string) || defaultCategory)
 
+const goSubmitLatihan = () => {
+    router.push('/submit-latihan')
+}
+
 const updateCategory = (cat: string) => {
     router.replace({
         query: { ...route.query, category: cat }
@@ -58,7 +62,7 @@ const skills = [
 </script>
 
 <template>
-    <div v-if="buy" class="flex min-h-screen pt-20">
+    <div v-if="buy" class="flex min-h-screen pt-30">
         <div class="w-1/2 pe-8 ps-8 pb-8 overflow-y-auto max-h-screen hide-scrollbar">
             <img src="/Rectangle 268.png" alt="Roadmap" class="w-full h-auto rounded-lg mb-6">
             <h1 class="text-[35.3px] font-bold mb-4">Building Product Roadmaps With Confidence</h1>
@@ -122,24 +126,42 @@ const skills = [
             <Button @click="updateCategory('project')"
                 :class="{ 'w-[119px] text-[20px] h-12 rounded-lg border-1 ms-3 cursor-pointer': true, 'bg-[#5476FF] hover:bg-[#5476FF]': category === 'project', 'text-[#5476FF] border-[#5476FF] bg-transparent border hover:bg-transparent': category === 'section' }">Project</Button>
             <div v-if="category === 'section'">
-                <img src="/Frame 1618869490.png" oncontextmenu="return false;" class="mt-5 w-full" alt="">
-                <img src="/Frame 1618869496.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869498.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869499.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869500.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869501.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869502.png" oncontextmenu="return false;" class="mt-5 w-full" alt="">
-                <img src="/Frame 1618869503.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869510.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869508.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869509.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869511.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869502.png" oncontextmenu="return false;" class="mt-5 w-full" alt="">
-                <img src="/Frame 1618869513.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869514.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869515.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869516.png" oncontextmenu="return false;" class="w-full" alt="">
-                <img src="/Frame 1618869517.png" oncontextmenu="return false;" class="w-full mb-15" alt="">
+                <img src="/Frame 1618869490.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer mt-5 w-full" alt="">
+                <img src="/Frame 1618869496.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869498.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869499.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869500.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869501.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869502.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer mt-5 w-full" alt="">
+                <img src="/Frame 1618869503.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869510.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869508.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869509.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869511.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869502.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer mt-5 w-full" alt="">
+                <img src="/Frame 1618869513.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869514.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869515.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869516.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full" alt="">
+                <img src="/Frame 1618869517.png" @click="goSubmitLatihan" oncontextmenu="return false;"
+                    class="cursor-pointer w-full mb-15" alt="">
             </div>
             <div v-if="category === 'project'" class="bg-[#f5f2ff] mt-5 p-3 rounded-sm">
                 <p>Kamu udah sampai di tahap akhir! Sekarang waktunya kamu implementasiin ilmu yang udah kamu pelajari.

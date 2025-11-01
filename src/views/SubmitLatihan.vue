@@ -13,7 +13,7 @@ import { Button } from '@/components/ui/button'
             Jangan sampai salah ya!
         </p>
 
-        <div class="upload-content relative text-center border border-dashed pt-40 pb-40 ps-80 pe-80 rounded-xl border-[#595959] mt-10 w-[70%] mx-auto"
+        <div class="upload-content relative text-center border border-dashed pt-30 pb-40 ps-80 pe-80 rounded-xl border-[#595959] mt-10 w-[70%] mx-auto"
             style="border-width: 2px; border-color: #595959; border-style: dashed; border-radius: 1rem; border-spacing: 10rem;">
             <img src="/Untitled design (1) 1.png" alt="Folder Icon" class="folder-icon mx-auto" />
             <h2 class="text-2xl font-bold">Drag atau Drop File Untuk Upload</h2>

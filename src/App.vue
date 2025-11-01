@@ -4,9 +4,11 @@ import { useRoute } from 'vue-router'
 import { computed } from 'vue'
 import { Toaster } from '@/components/ui/sonner'
 import 'vue-sonner/style.css'
+import Footer from './components/Footer.vue';
 
 const route = useRoute()
 const showNavbar = computed(() => !['/login', '/register', '/testing'].includes(route.path))
+const showFooter = computed(() => !['/login', '/register', '/testing', '/testing1'].includes(route.path))
 </script>
 
 <template>
@@ -14,5 +16,6 @@ const showNavbar = computed(() => !['/login', '/register', '/testing'].includes(
     <Toaster />
     <NavBar v-if="showNavbar" />
     <RouterView />
+    <Footer v-if="showFooter" />
   </div>
 </template>
