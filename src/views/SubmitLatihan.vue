@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 
 <template>
     <div class="h-screen relative">
-        <h1 class="text-center text-3xl font-bold mt-20">Yuk, Kumpulin Latihan Kamu!</h1>
+        <h1 class="text-center text-3xl font-bold mt-40">Yuk, Kumpulin Latihan Kamu!</h1>
         <Separator class="my-5 border-5 mx-auto !w-[96px] rounded-sm border-[#5476ff]" />
         <p class="text-center">
             Tugas kamu upload di sini ya! inget, nama filenya harus mengikuti format ini
