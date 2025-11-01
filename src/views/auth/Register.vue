@@ -81,7 +81,7 @@ const onSubmit = () => {
 
             <Card class="w-150 flex self-center justify-center z-10">
                 <CardHeader>
-                    <CardTitle class="text-center text-3xl mt-10">Yuk, Daftar Jadi Nusaverse</CardTitle>
+                    <CardTitle class="text-center text-[30px] !font-bold mt-10">Yuk, Daftar Jadi Nusaverse</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <form id="registerForm" class="w-full gap-5 justify-center" @submit.prevent="onSubmit">

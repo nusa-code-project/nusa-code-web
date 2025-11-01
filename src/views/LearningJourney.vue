@@ -124,25 +124,36 @@ const cardRoadmaps = ref([
 </script>
 
 <template>
-    <section class="jumbotron pt-30 ms-20 flex flex-col">
-        <h1 class="text-2xl font-bold">Mentor Pilihan Kamu</h1>
+    <section class="jumbotron ms-25 flex flex-col pt-40">
+        <div class="flex flex-row items-center gap-2">
+            <h2 class="font-bold text-[30px]">Mentor Pilihan Kamu</h2>
+            <p class="text-xl text-[#5476FF]">Lihat Semua</p>
+        </div>
         <div class="flex flex-row gap-5 mt-2">
-            <div v-for="(mentor, idx) in mentors" :key="idx"
-                class="mentor flex flex-col justify-center items-center p-3 w-50 gap-2">
-                <img :src="mentor.image" class="w-20" :alt="mentor.name" />
-                <h2 class="font-semibold text-xl">{{ mentor.name }}</h2>
-                <p class="text-center text-sm">{{ mentor.title }}</p>
+            <div class="flex flex-row gap-25 mt-2">
+                <div v-for="(mentor, idx) in mentors" :key="idx"
+                    class="mentor flex flex-col justify-center items-center p-3 w-50 gap-1">
+                    <img :src="mentor.image" class="w-35 h-35 aspect-square object-cover rounded-full block shrink-0"
+                        :alt="mentor.name" />
+                    <h2 class="font-semibold text-[23px] pt-1 text-center leading-tight">
+                        {{ mentor.name }}
+                    </h2>
+                    <p class="text-center text-[18px] text-[#454545] min-h-[3rem] flex justify-center items-center">
+                        {{ mentor.title }}
+                    </p>
+                </div>
             </div>
+
         </div>
     </section>
 
-    <section class="roadmap ms-20 mt-10">
-        <h1 class="text-2xl font-bold">Pilih Roadmap Belajarmu Selanjutnya</h1>
+    <section class="roadmap ps-25 mt-10">
+        <h1 class="text-[30px] font-bold">Pilih Roadmap Belajarmu Selanjutnya</h1>
         <div class="flex flex-row gap-5 mt-5">
             <div v-for="(card, idx) in cardRoadmaps" :key="idx"
                 class="relative border border-[#E6EBFF] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)] w-90 p-3 rounded-xl flex flex-col">
                 <div class="flex justify-between items-center">
-                    <h2 class="text-xl">{{ card.title }}</h2>
+                    <h2 class="text-2xl">{{ card.title }}</h2>
                     <Badge class="bg-[#dfd7ff] text-black !ps-1 !pe-1 cursor-pointer rounded-xl hover:bg-[#dfd7ff]">
                         {{ card.badge }}
                     </Badge>
@@ -177,9 +188,9 @@ const cardRoadmaps = ref([
         </div>
     </section>
 
-    <section class="my-course mt-10 ms-20">
+    <section class="my-course mt-10 ps-25">
         <div class="flex gap-5 items-center">
-            <h1 class="text-2xl font-bold">Kursus Yang Sudah Kamu Miliki</h1>
+            <h1 class="text-[30px] font-bold">Kursus Yang Sudah Kamu Miliki</h1>
             <p class="text-sm text-[#5476ff]">Filter By</p>
         </div>
         <div class="flex flex-row gap-5 mt-5">
@@ -216,9 +227,9 @@ const cardRoadmaps = ref([
         </div>
     </section>
 
-    <section class="ai-role-play mt-10 ms-20">
+    <section class="ai-role-play mt-10 ps-25">
         <div class="flex gap-5 items-center">
-            <h1 class="text-2xl font-bold">Lanjutkan Modul AI Role Play</h1>
+            <h1 class="text-[30px] font-bold">Lanjutkan Modul AI Role Play</h1>
             <p class="text-sm text-[#5476ff]">Lihat Semua</p>
         </div>
         <div class="flex flex-row gap-5 mt-5">

@@ -206,7 +206,7 @@ const listCourseRecomendation = [
 
     <section class="daftar-kursus flex flex-col ps-25 pt-8 gap-5">
         <div class="flex flex-row items-center gap-2">
-            <h2 class="font-bold text-3xl">Dirancang Khusus Untuk Kamu</h2>
+            <h2 class="font-bold text-[30px]">Dirancang Khusus Untuk Kamu</h2>
         </div>
         <ScrollArea class="w-full pb-5 rounded-md">
             <div class="flex flex-row gap-5">
@@ -341,38 +341,6 @@ const listCourseRecomendation = [
 
             <ScrollBar orientation="horizontal" />
         </ScrollArea>
-        <!-- <div class="flex flex-row gap-5">
-            <Card v-for="(card, index) in exploreCourses" :key="index"
-                class="w-80 border border-[#e6ebff] shadow-[0_4px_4px_0_rgba(230,235,255,0.25)]">
-                <CardHeader class="ps-2 pe-2">
-                    <img :src="card.image" class="w-full" alt="">
-
-                    <CardTitle class="text-[18px] overflow-hidden text-ellipsis min-h-[48px] line-clamp-2">
-                        {{ card.title }}
-                    </CardTitle>
-
-                    <CardDescription class="pe-2 text-[12px] overflow-hidden min-h-[36px] line-clamp-2">
-                        {{ card.description }}
-                    </CardDescription>
-
-                </CardHeader>
-
-                <CardContent class="ps-2 pe-2 flex flex-row items-center gap-2">
-                    <img :src="card.avatar" width="40" alt="avatar">
-                    <p class="text-[15px]">{{ card.author }}</p>
-                </CardContent>
-
-                <CardFooter class="ps-2 pe-2 flex flex-row justify-between">
-                    <div class="flex flex-row items-center gap-2">
-                        <h2 class="text-[14px] font-bold">{{ card.rating.toFixed(1) }}</h2>
-                        <img v-for="i in 5" :key="i" src="/fi-sr-star.png" class="w-[14px] h-[14px]" alt="">
-                    </div>
-                    <p class="font-bold bg-[#DFD7FF] pe-2 ps-2 rounded-md text-[14px]">
-                        {{ card.price }}
-                    </p>
-                </CardFooter>
-            </Card>
-        </div> -->
     </section>
     <br>
     <br>
